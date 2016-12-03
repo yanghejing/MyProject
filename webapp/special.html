@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>special</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/special.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src='lib/base.js'></script>
+    <script src="lib/zepto.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="back">
+                <a href="javascript:vodi(0)"><span>&#xe6b0;</span></a>
+            </div>
+            <div class="title">
+                <span>全部专题</span>
+            </div>
+        </header>
+        <div class="main">
+            <ul>
+                <li>
+                    <a href="special-detailed.html">
+                        <img src="images/special/special01.jpg" alt="">
+                        <div class="text-box">
+                            <div class="box-border">
+                                <h2>原木色打造的北欧家</h2>
+                                <h3><span>《</span>清新色系家具<span>》</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="special-detailed.html">
+                        <img src="images/special/special02.jpg" alt="">
+                        <div class="text-box">
+                            <div class="box-border">
+                                <h2>洗漱一秒提高逼格的日式餐具</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="special-detailed.html">
+                        <img src="images/special/special03.jpg" alt="">
+                        <div class="text-box">
+                            <div class="box-border">
+                                <h2>那些独具匠心的美妙家具</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="special-detailed.html">
+                        <img src="images/special/special03.jpg" alt="">
+                        <div class="text-box">
+                            <div class="box-border">
+                                <h2>简约日式实木家具</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="special-detailed.html">
+                        <img src="images/special/special01.jpg" alt="">
+                        <div class="text-box">
+                            <div class="box-border">
+                                <h2>一个人的休闲时光</h2>
+                                <h3><span>《</span>精选担任沙发椅<span>》</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    $('.back a').on('mousedown',function(e){
+        $(window).get(0).history.back();
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/zepto.js"></script>
+    <script src="lib/fx.js"></script>
+    <script src='lib/base.js'></script>
+    <script src="lib/banner.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="back">
+                <a href="javascript:void(0)"><span>&#xe6b0;</span></a>
+            </div>
+            <div class="title">
+                <span>商品详情</span>
+            </div>
+            <div class="header-right">
+                <div class="shopping-cat">
+                    <a href="my-shop.html"><span>&#xe61b;</span></a>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="slide-box">
+                <a href="#">
+                    <img src="images/details/details-banner01.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/details/details-banner01.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/details/details-banner01.jpg" alt="">
+                </a>
+            </div>
+            <div class="cicle">
+                <a href="#" class="active"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="product-title">
+            <h3>复古橡胶木经典单人餐椅</h3>
+            <span><i>￥</i>4200</span>
+            <div class="product-info">
+                <span>快递 ￥<i>10.00</i></span>
+                <span>已销：<i>63</i></span>
+                <span>浙江杭州</span>
+            </div>
+        </div>
+        <div class="shop">
+            <div class="shop-left clearfix">
+                <span><img src="images/details/details-shop-logo.jpg" alt=""></span>
+                <h3>失物招领</h3>
+                <a href="javscript:void(0);"><span>&#xe648;</span></a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-header">
+                <a href="javscript:void(0);" class="current">图文详情</a>
+                <a href="javscript:void(0);">评论</a>
+            </div>
+            <div class="info-content">
+                <div class="img-text current">
+                    <span>
+                        <img src="images/details/details-product02.jpg" alt=""><br>
+                        <img src="images/details/details-product01.jpg" alt=""><br>
+                        <img src="images/details/details-product05.jpg" alt=""><br>
+                        <img src="images/details/details-product04.jpg" alt=""><br>
+                        <img src="images/details/details-product03.jpg" alt="">
+                    </span>
+                </div>
+                <div class="comment">
+                    <ul class="filter clearfix">
+                        <li class="filter-no current">全部</li>
+                        <li class="filter-no">追加</li>
+                        <li class="filter-no">有图(<b>7</b>)</li>
+                    </ul>
+                    <ul class="comment-list">
+                        <li class="item">
+                            <div class="info clearfix">
+                                <div class="author"><span>张三</span></div>
+                                <time>2016-11-05</time>
+                            </div>
+                            <p class="text">
+                                非常满意！餐桌非常厚重！凳子也是！除了忘记桌子的螺丝没发，卖家也飞快的给补发了！总之完美！对比了淘宝，天猫等所有店铺，选的太好了！很少写这么长的评价！当时很忧郁，火烧石、大理石，最后还是选了实木！火烧石不好清理，大理石怕撞击和辐射！对于有宝宝的家庭来说，实木大爱！而且还是3年质保哦！想买的不要犹豫了！
+                            </p>
+                            <p class="reply">
+                                掌柜回复:解释：亲，辛苦了，谢谢您对【哈乌斯家居】的支持与认可，您的满意是我们不断进步的动力~我们全心全意的真诚服务，只为给您带去宾至如归的购物体验~感恩您的一路相随^_^，祝您生活愉快，事事顺心！期待您的再次光临~
+                            </p>
+                            <ul class="pics">
+                                <li><img src="//img.alicdn.com/bao/uploaded/i4/139840315119464982/TB2F7r9bM1J.eBjy0FaXXaXeVXa_!!0-rate.jpg_100x100q75.jpg"></li>
+                            </ul>
+                            <ul class="infor">
+                                <li>颜色分类：1.3米餐桌+4椅子【绿色椅面】</li>
+                                <li>组合形式：一桌四椅</li>
+                                <li>家具结构：框架结构</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="javascript:void(0)" class="collect"><span class="love-img">&#xe639;</span></a>
+            <a href="javascript:void(0)" class="join-cat"><span>&#xe61b;</span>加入购物车</a>
+            <a href="javascript:void(0)" class="purchase">立即购买</a>
+        </footer>
+    </div>
+    <script>
+    //banner
+    var index = 0;
+    $('.slide-box').touchMove();
+    $.autoPlay($('.slide-box'));
+    $('.slide-box').on('touchstart', function() {
+        clearInterval(adTimer);
+    }).on('touchend', function() {
+        $.autoPlay($('.slide-box'));
+    });
+
+    //back
+    $('.back>a').mousedown(function() {
+        window.history.back();
+    });
+
+    $(".collect").mousedown(function() {
+        $(this).toggleClass('love');
+    });
+    $('.shop-left>a').mousedown(function() {
+        $(this).toggleClass('follow')
+            .find('span')
+            .html($(this).hasClass('follow') ? '&#xe649;' : '&#xe648;');
+    });
+    $('.info-header>a').mousedown(function() {
+        $(this).addClass('current').siblings().removeClass('current');
+        $($('.info-content>div').get($(this).index())).addClass('current').siblings().removeClass('current');
+    });
+
+    function jsonp581(data) {
+        var html = "";
+        var list = data.rateDetail.rateList;
+        var infor = [];
+        $('.filter-no b').html(data.rateDetail.rateCount.picNum);
+
+        for (var i = 0; i < list.length; i++) {
+            html += '<li class="item">';
+            html += '<div class="info clearfix">';
+            html += '<div class="author"><span>' + list[i].displayUserNick + '</span></div>';
+            html += '<time>' + formatDate(list[i].rateDate) + '</time>';
+            html += '</div>';
+            html += '<p class="text">' + list[i].rateContent + '</p>';
+            if (list[i].reply != '') {
+                html += '<p class="reply">' + list[i].reply + '</p>';
+            }
+
+
+            if (list[i].pics.length > 0) {
+                html += '<ul class="pics">';
+                for (var j = 0; j < list[i].pics.length; j++) {
+                    html += '<li><img src="' + list[i].pics[j] + '"></li>';
+                }
+                html += '</ul>';
+            }
+            html += '<ul class="infor">';
+            infor = list[i].auctionSku.split(';');
+            for (var k = 0; k < infor.length; k++) {
+                html += '<li>' + infor[k] + '</li>';
+            }
+            html += '</ul>';
+            html += '</li>'
+        }
+        $('.comment-list').html(html);
+    }
+
+    function formatDate(date) {
+        var dt = new Date(date);
+        var y = dt.getFullYear();
+        var m = dt.getMonth() + 1;
+        m = m < 10 ? '0' + m : m;
+        var d = dt.getDate();
+        d = d < 10 ? ('0' + d) : d;
+        return y + '-' + m + '-' + d;
+    }
+    </script>
+    <script src="js/CommentData.js"></script>
+</body>
+
+</html>

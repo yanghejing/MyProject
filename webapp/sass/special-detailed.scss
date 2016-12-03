@@ -1,0 +1,222 @@
+$main-color: #333;
+a,
+a:hover {
+    text-decoration: none;
+    color: $main-color;
+}
+
+.clearfix:after {
+    content: '';
+    height: 0;
+    display: block;
+}
+
+html * {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h3,
+h2 {
+    font-weight: 500;
+}
+
+html {
+    color: $main-color;
+    font-family: '微软雅黑', Arial, Helvetica;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 0;
+    >header {
+        position: relative;
+        line-height: .9rem;
+        >.back {
+            position: absolute;
+            left: .2rem;
+            top: 0;
+            font-family: iconfont;
+            font-size: .4rem;
+        }
+        >.title {
+            width: 100%;
+            font-size: .36rem;
+            text-align: center;
+        }
+    }
+    >.main {
+        padding-bottom: .3rem;
+        >.theme {
+            padding-bottom: .2rem;
+            >a {
+                display: block;
+                height: 3.1rem;
+                position: relative;
+                overflow: hidden;
+                >img {
+                    width: 100%;
+                }
+                >.text-box {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -.61rem;
+                    margin-left: -1.7rem;
+                    padding: .1rem;
+                    background-color: rgba(#4a3731, .5);
+                    color: #fff;
+                    .box-border {
+                        border: .03rem solid #c8daec;
+                        text-align: center;
+                        h2 {
+                            margin-top: .2rem;
+                            margin-bottom: .2rem;
+                            padding: 0 .3rem;
+                            font-size: .28rem;
+                        }
+                        h3 {
+                            font-size: .18rem;
+                            position: relative;
+                            margin-bottom: .1rem;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                left: 50%;
+                                top: -.1rem;
+                                margin-left: -.22rem;
+                                width: .44rem;
+                                height: .03rem;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            p {
+                padding: .3rem .2rem;
+                font-size: .24rem;
+                line-height: 1.3em;
+            }
+        }
+        >.share {
+            >.item {
+                border-top: 1px solid #dedede;
+                >p {
+                    padding: .12rem .2rem;
+                    font-size: .28rem;
+                    line-height: .6rem;
+                    a {
+                        display: inline-block;
+                        width: .6rem;
+                        height: .6rem;
+                        border-radius: .3rem;
+                        background-image: url("../images/special-detailed/header-pic03.jpg");
+                        background-repeat: no-repeat;
+                        background-position: left top;
+                        vertical-align: top;
+                        margin-right: .1rem;
+                    }
+                }
+                >.img-box {
+                    height: 3.85rem;
+                    overflow: hidden;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: .35rem;
+                        right: 0;
+                        width: 1.12rem;
+                        height: .56rem;
+                        background: rgba(#000, .5);
+                        color: #fff;
+                        font-size: .26rem;
+                        line-height: .56rem;
+                        text-align: center;
+                        i {
+                            font-style: normal;
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: -.28rem;
+                            border-top: .28rem solid transparent;
+                            border-bottom: .28rem solid transparent;
+                            border-right: .28rem solid rgba(#000, .5);
+                        }
+                    }
+                }
+                >.operation {
+                    padding: 0 .2rem;
+                    a {
+                        display: inline-block;
+                        width: calc(100%/3);
+                        height: .9rem;
+                        font-size: .26rem;
+                        line-height: .9rem;
+                        span {
+                            font-family: iconfont;
+                            vertical-align: top;
+                            margin-right: .1rem;
+                            &:nth-of-type(2) {
+                                font-size: .4rem;
+                            }
+                        }
+                    }
+                    >.comment span {
+                        font-size: .5rem;
+                    }
+                    >.fabulous {
+                        text-align: center;
+                        span {
+                            font-size: .6rem;
+                        }
+                    }
+                    .love {
+                        color: rgb(243, 81, 134);
+                        .love-img {
+                            display: inline-block;
+                            -webkit-animation-name: heartAn;
+                            animation-name: heartAn;
+                            -webkit-animation-duration: .5s;
+                            animation-duration: .5s;
+                        }
+                    }
+                    >.enter {
+                        text-align: right;
+                        span {
+                            font-size: .4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes heartAn {
+    0% {
+        transform: scale3d(0, 0, 1);
+    }
+    80% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes heartAn {
+    0% {
+        transform: scale3d(0, 0, 1);
+    }
+    80% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

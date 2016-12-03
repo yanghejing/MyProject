@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <script type="text/javascript" src="lib/base.js"></script>
+    <script type="text/javascript" src="lib/Zepto.js"></script>
+    <script type="text/javascript" src="lib/fx.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="warper">
+        <div class="content">
+            <span class="close">&#xe68c;</span>
+            <div class="logo-z">
+                <img src="./images/l-images/logo.png" alt="">
+            </div>
+            <form action="" id="form1">
+                <span class="aa">&#xe6a5;</span>
+                <span class="bb">&#xe632;</span>
+                <input class="label" type="username" name="inputText" placeholder="请输入手机号码/邮箱">
+                <input class="label1" type="password" name="inputText" placeholder="请输入密码">
+                <p><a class="forget" href="javascript:void(0);">忘记密码</a>
+                    <a href="javascript:void(0);" class="zhuce">立即注册</a></p>
+                <input type="button" value="登陆" class="ld" />
+            </form>
+        </div>
+        <div class="content-a">
+            <p class="logo-a"><img src="./images/a-images/logo1.png" alt=""></p>
+            <p class="text">造物创造现代新生活</p>
+        </div>
+    </div>
+    <script>
+    $('.ld').click(function() {
+        validateCode();
+    });
+    $('#form1').on('submit',validateCode);
+    $('.content-a').animate({
+        'opacity': '0'
+    }, 500, 'ease', function() {
+        $(this).hide();
+    }, 2000);
+    // $('.content-a').animate({'display','none'},2000);
+    $('.close').on('mousedown',function(){
+        window.location.href = 'home.html';
+    })
+    function validateCode() {
+
+        if ($('.label').val() == '') {
+            alert('账号不能为空');
+        } else if($('.label1').val() == '') {
+            alert('密码不能为空');
+        }else{
+            var un = /((^w+[-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*$)|(^[1][358][0-9]{9}$)/;
+
+            var psd = $('.label').val();
+            if(!un.test(psd)){
+                alert('账号格式不对');
+            }else{
+                window.location.href = 'home.html';
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>

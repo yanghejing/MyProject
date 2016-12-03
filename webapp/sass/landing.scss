@@ -1,0 +1,156 @@
+$color:#696969;
+$main-color: #333;
+$main-color-actie: #a28362;
+$font-family:'Microsoft Yahei',
+        'Helvetica Neue',
+        Helvetica,
+        Arial,
+        sans-serif;
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+body {
+    font-family: "iconfont";
+    font-size: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.warper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    >.content {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/l-images/landing.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        >span {
+            font-size: 0.36rem;
+            float: right;
+            padding-top: 0.25rem;
+            padding-right: 0.35rem;
+        }
+        >.logo-z {
+            padding-left: 2.1rem;
+            padding-top: 1.88rem;
+            >img {
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -3.2rem;
+                margin-left: -1rem;
+            }
+        }
+        >form {
+            position: absolute;
+            background-color: transparent;
+            color: black;
+            top: 3.2rem;
+            left: 50%;
+            width: 4.4rem;
+            margin-left: -2.2rem;
+            input{
+                outline: none;
+                color: #fff;
+                padding-left: 0.5rem;
+                width: 3.95rem;
+                height: 0.5rem;
+                margin-top: 1.4rem;
+                border: 1px solid transparent;
+                background-color: rgba(0, 0, 0, 0);
+                border-bottom: 1px solid #fff;
+                font-size: .2rem;
+            }
+            .label1{
+                margin-top: .2rem;
+            }
+            >.aa {
+                font-size: 0.3rem;
+                color: #fff;
+                position: absolute;
+                top: 1.5rem;
+                left: .1rem;
+            }
+            >.bb {
+                font-size: 0.3rem;
+                color: #fff;
+                position: absolute;
+                top: 2.2rem;
+                left: .1rem;
+            }
+            >p {
+                padding-top: 0.25rem;
+                font-family: $font-family;
+                >a {
+                    display: inline-block;
+                    font-size: .2rem;
+                    color: #fff;
+                    margin-left: .1rem;
+                }
+                >a:nth-of-type(2){
+                    float: right;
+                    margin-right: .1rem;
+                }
+            }
+            >.ld {
+                width: 3.5rem;
+                height: 0.7rem;
+                background-color: #9a7d5e;
+                border-radius: .1rem;
+                border: none;
+                text-align: center;
+                font-family: $font-family;
+                font-size: 0.3rem;
+                color: #fff;
+                margin-top: .2rem;
+                position: absolute;
+                bottom: -1rem;
+                left: 50%;
+                margin-left: -1.75rem;
+                padding: 0;
+            }
+        }
+    }
+    >.content-a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url(../images/a-images/beijing.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        >.logo-a >img {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -3.2rem;
+            margin-left: -1rem;
+        }
+        >.text {
+            font-size: 0.32rem;
+            color: #fff;
+            font-family: $font-family;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -.6rem;
+            margin-left: -1.5rem;
+        }
+    }
+}
+input[placeholder], [placeholder], *[placeholder] { 
+color:#fff !important; 
+} 

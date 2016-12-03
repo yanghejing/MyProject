@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>community</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/community.css">
+    <script type="text/javascript" src="lib/base.js"></script>
+    <script type="text/javascript" src="lib/zepto.js"></script>
+    <script type="text/javascript" src="lib/fx.js"></script>
+</head>
+
+<body>
+    <div class="warper">
+        <header>
+            <span id="back_t">&#xe6b0;</span>
+            <span>社区</span>
+            <span>&#xe67e;</span>
+        </header>
+        <section>
+            <div class="main-user">
+                <div class="content">
+                    <p class="head"><span><a href="javscript:void(0);">Aloha</a></span></p>
+                    <div class="show">
+                        <span class="beg"><!-- <img src="../images/zan.png" alt=""> --><a href="details.html">求赞</a></span>
+                    </div>
+                    <div class="name">
+                        <p>榉木镶铜扫秒静音座钟</p>
+                        <a href="javscript:void(0);"  class="foo"><span class="love_text">36</span><span class="love">&#xe639;</span></a>
+                    </div>
+                </div>
+                <div class="content-two">
+                    <p class="head-two"><span><a href="javscript:void(0);">Lostan</a></span></p>
+                    <div class="show-two">
+                        <span class="beg-two"><a href="details.html">求赞</a></span>
+                    </div>
+                    <div class="name-two">
+                        <p>蒙氏教具</p>
+                        <a href="javscript:void(0);"  class="foo"><span class="love_text">36</span><span class="love">&#xe639;</span></a>
+                    </div>
+                </div>
+                <div class="content-three">
+                    <p class="head-three"><span><a href="javscript:void(0);">Starm</a></span></p>
+                    <div class="show-three">
+                        <span class="beg-three"><a href="details.html">求赞</a></span>
+                    </div>
+                    <div class="name-three">
+                        <p>榉木镶铜扫秒静音座钟</p>
+                        <a href="javscript:void(0);"  class="foo"><span class="love_text">36</span><span class="love">&#xe639;</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul class="clearfix">
+                <li>
+                    <a href="home.html">
+                        <span>&#xe645;</span>
+                        <i>首页</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="selection.html">
+                        <span>&#xe608;</span>
+                        <i>发现</i>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="javscript:void(0);">
+                        <span>&#xe624;</span>
+                        <i>社区</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-entry.html">
+                        <span>&#xe647;</span>
+                        <i>我的</i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+    $('.main-user').on('mousedown', '.foo', function() {
+        $(this).toggleClass('icoo').find('.love_text').text($(this).hasClass('icoo') ?
+            parseInt($(this).find('.love_text').text()) + 1 :
+            parseInt($(this).find('.love_text').text()) - 1);
+    });
+    $('#back_t').on('mousedown',function(e){
+        $(window).get(0).history.back();
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+$color:#696969;
+$main-color: #333;
+$main-color-actie: #a28362;
+$font-family:"微软雅黑";
+a,
+a:hover {
+    text-decoration: none;
+    color: $main-color;
+}
+
+body {
+    font-family: "iconfont";
+    font-size: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.warper {
+    width: 6.4rem;
+    margin: 0 auto;
+    >header {
+        position: relative;
+        width: 6.4rem;
+        height: 0.9rem;
+        >span {
+            font-size: 0.36rem;
+            line-height: 0.9rem;
+        }
+        >span:nth-of-type(2) {
+            position: absolute;
+            top: 0;
+            left: 45%;
+        }
+        >span:nth-of-type(3) {
+            float: right;
+            margin-right: 0.2rem;
+        }
+        span:nth-of-type(1){
+            float: left;
+            padding-left: 0.2rem;
+        }
+    }
+    >section {
+        >.main-user {
+            >.content {
+                // >.round{
+                //  width:0.6rem;
+                //  height:0.6rem;
+                //  border-radius: 0.6rem;
+                //  background-color:rgba(0,0,0,0.6);
+                //  margin-left:0.2rem;
+                // }
+                >p {
+                    margin-top: 0.11rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 0.3rem;
+                    background-image: url(../images/touxiang.png);
+                    background-repeat: no-repeat;
+                    background-position: -0.35rem -0.1rem;
+                    >span a {
+                        font-weight: bold;
+                        font-size: 0.28rem;
+                        color: $color;
+                        line-height: 0.6rem;
+                        padding-left: 0.66rem;
+                        font-family: $font-family;
+                    }
+                }
+                >.show {
+                    position: relative;
+                    width: 6.4rem;
+                    height: 4.55rem;
+                    background-image: url(../images/zhanshi.png);
+                    background-repeat: no-repeat;
+                    margin-top: 0.1rem;
+                    >.beg {
+                        display: block;
+                        width: 0.93rem;
+                        height: 0.52rem;
+                        background-image: url(../images/zan.png);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        left: 5.46rem;
+                        top: 0.35rem;
+                        >a {
+                            color: #fff;
+                            font-size: 0.24rem;
+                            padding-left: 0.27rem;
+                            line-height: 0.52rem;
+                            font-family: $font-family;
+                        }
+                    }
+                }
+                >.name {
+                    width: 6.4rem;
+                    height: 0.9rem;
+                    border-bottom: 1px solid #e6e6e6;
+                    >p {
+                        float: left;
+                        font-size: 0.28rem;
+                        color: $main-color;
+                        line-height: 0.6rem;
+                        padding-left: 0.2rem;
+                        font-family: $font-family;
+                    }
+                    >a {
+                        margin-right: 0.2rem;
+                        text-align: center;
+                        float: right;
+                        font-size: 0.5rem;
+                        >.love_text {
+                            font-size: 0.18rem;
+                            float: right;
+                            line-height: 0.6rem;
+                            font-family: $font-family;
+                        }
+                    }
+                    >.icoo {
+                        color: rgb(243, 81, 134);
+                        >.love_a {
+                            display: inline-block;
+                            -webkit-animation-name: heartAn;
+                            animation-name: heartAn;
+                            -webkit-animation-duration: 0.5s;
+                            animation-duration: 0.5s;
+                        }
+                    }
+                }
+            }
+            >.content-two {
+                // width:0.6rem;
+                // height:0.6rem;
+                // border-radius: 0.6rem;
+                // background-color:rgba(0,0,0,0.6);
+                // margin-left:0.2rem;
+                >.head-two {
+                    margin-top: 0.11rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 0.3rem;
+                    background-image: url(../images/touxiang2.png);
+                    background-repeat: no-repeat;
+                    background-position: -0.015rem -0.01rem;
+                    >span a {
+                        font-weight: bold;
+                        font-size: 0.28rem;
+                        color: $color;
+                        line-height: 0.6rem;
+                        padding-left: 0.66rem;
+                        font-family: $font-family;
+                    }
+                }
+                >.show-two {
+                    position: relative;
+                    width: 6.4rem;
+                    height: 3.91rem;
+                    background-image: url(../images/zhanshi2.png);
+                    background-repeat: no-repeat;
+                    margin-top: 0.1rem;
+                    >.beg-two {
+                        display: block;
+                        width: 0.93rem;
+                        height: 0.52rem;
+                        background-image: url(../images/zan.png);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        left: 5.46rem;
+                        top: 0.35rem;
+                        >a {
+                            color: #fff;
+                            font-size: 0.24rem;
+                            font-family: $font-family;
+                            padding-left: 0.27rem;
+                            line-height: 0.52rem;
+                        }
+                    }
+                }
+                >.name-two {
+                    width: 6.4rem;
+                    height: 0.9rem;
+                    border-bottom: 1px solid #e6e6e6;
+                    >p {
+                        float: left;
+                        font-size: 0.28rem;
+                        color: $main-color;
+                        line-height: 0.6rem;
+                        padding-left: 0.2rem;
+                        font-family: $font-family;
+                    }
+                    >a {
+                        margin-right: 0.2rem;
+                        text-align: center;
+                        float: right;
+                        font-size: 0.5rem;
+                        >.love_text {
+                            font-size: 0.18rem;
+                            float: right;
+                            line-height: 0.6rem;
+                            font-family: $font-family;
+                        }
+                    }
+                    >.icoo {
+                        color: rgb(243, 81, 134);
+                        >.love {
+                            display: inline-block;
+                            -webkit-animation-name: heartAn;
+                            animation-name: heartAn;
+                            -webkit-animation-duration: 0.5s;
+                            animation-duration: 0.5s;
+                        }
+                    }
+                }
+            }
+            >.content-three {
+                margin-bottom: 1rem;
+                // width:0.6rem;
+                // height:0.6rem;
+                // border-radius: 0.6rem;
+                // background-color:rgba(0,0,0,0.6);
+                // margin-left:0.2rem;
+                >.head-three {
+                    margin-top: 0.11rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 0.3rem;
+                    background-image: url(../images/touxiang3.png);
+                    background-repeat: no-repeat;
+                    background-position: center -0.01rem;
+                    >span a {
+                        font-weight: bold;
+                        font-size: 0.28rem;
+                        color: $color;
+                        line-height: 0.6rem;
+                        padding-left: 0.66rem;
+                    }
+                }
+                >.show-three {
+                    position: relative;
+                    width: 6.4rem;
+                    height: 4.34rem;
+                    background-image: url(../images/zhanshi3.png);
+                    background-repeat: no-repeat;
+                    margin-top: 0.1rem;
+                    margin-bottom: 0.2rem;
+                    >.beg-three {
+                        display: block;
+                        width: 0.93rem;
+                        height: 0.52rem;
+                        background-image: url(../images/zan.png);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        left: 5.46rem;
+                        top: 0.35rem;
+                        >a {
+                            color: #fff;
+                            font-size: 0.24rem;
+                            font-family: $font-family;
+                            padding-left: 0.27rem;
+                            line-height: 0.52rem;
+                        }
+                    }
+                }
+                >.name-three {
+                    width: 6.4rem;
+                    height: 0.9rem;
+                    border-bottom: 1px solid #e6e6e6;
+                    >p {
+                        float: left;
+                        font-size: 0.28rem;
+                        color: $main-color;
+                        line-height: 0.6rem;
+                        padding-left: 0.2rem;
+                        font-family: $font-family;
+                    }
+                    >a {
+                        margin-right: 0.2rem;
+                        text-align: center;
+                        float: right;
+                        font-size: 0.5rem;
+                        >.love_text {
+                            font-size: 0.18rem;
+                            float: right;
+                            line-height: 0.6rem;
+                            font-family: $font-family;
+                        }
+                    }
+                    >.icoo {
+                        color: rgb(243, 81, 134);
+                        >.love {
+                            display: inline-block;
+                            -webkit-animation-name: heartAn;
+                            animation-name: heartAn;
+                            -webkit-animation-duration: 0.5s;
+                            animation-duration: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        >ul {
+            >li {
+                width: 25%;
+                float: left;
+                text-align: center;
+                height: 1rem;
+                >a {
+                    display: block;
+                    >span {
+                        font-size: .5rem;
+                        display: block;
+                        margin-top: .14rem;
+                    }
+                    >i {
+                        font-size: .18rem;
+                        color: $main-color;
+                        font-style: normal;
+                    }
+                }
+            }
+            >.active {
+                >a {
+                    >span {
+                        color: $main-color-actie;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes heartAn {
+    0% {
+        transform: scale3d(0, 0, 1);
+    }
+    80% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes heartAn {
+    0% {
+        transform: scale3d(0, 0, 1);
+    }
+    80% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

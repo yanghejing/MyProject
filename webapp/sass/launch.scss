@@ -1,0 +1,42 @@
+$color:#696969;
+$main-color: #333;
+$main-color-actie: #a28362;
+$font-family:"微软雅黑";
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+body {
+    font-family: "iconfont";
+    font-size: 0;
+}
+
+img {
+    width: 100%;
+}
+.warper{
+	width:6.4rem;
+	margin:0 auto;
+	>.content-a{
+		width:6.4rem;
+		height:13.32rem;
+		background-image:url(../images/a-images/beijing.png);
+		background-repeat:no-repeat;
+		>.logo-a{
+			padding-left:2.2rem;
+			padding-top:2rem;
+			>img{
+				width:2rem;
+				height:2rem;
+			}
+		}
+		>.text{
+			font-size:0.32rem;
+			color:#fff;
+			font-family:$font-family;
+			padding-top:0.2rem;
+			padding-left:   1.8rem;
+		}
+	}
+}

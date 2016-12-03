@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>special-detailed</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/special-detailed.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src='lib/base.js'></script>
+    <script src="lib/zepto.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="back">
+                <a href="javascript:void(0);" id="back"><span>&#xe6b0;</span></a>
+            </div>
+            <div class="title">
+                <span>专题商品推荐</span>
+            </div>
+        </header>
+        <div class="main">
+            <div class="theme">
+                <a href="javscript:void(0);">
+                    <img src="images/special-detailed/theme01.jpg" alt="">
+                    <div class="text-box">
+                        <div class="box-border">
+                            <h2>竹木家具打造清新生活</h2>
+                            <h3><span>《</span>清新色系家具<span>》</span></h3>
+                        </div>
+                    </div>
+                </a>
+                <p>想要清新家？用竹木制家具，天然无修饰的纯悴质感带你创造清新简约的家。独具匠心设计款家具，竹木打造，带你回归天然本真的竹木生活。</p>
+            </div>
+            <div class="share">
+                <div class="item">
+                    <p>
+                        <a href="javscript:void(0);"></a>
+                        Rinka
+                    </p>
+                    <div class="img-box">
+                        <a href="details.html">
+                            <img src="images/special-detailed/special-detailed01.jpg" alt="">
+                            <span><i>￥</i>369</span>
+                        </a>
+                    </div>
+                    <div class="operation">
+                        <a href="javscript:void(0);" class="comment"><span>&#xe64f;</span><span class="item-num">24</span></a>
+                        <a href="javscript:void(0);" class="fabulous"><span class="love-img">&#xe639;</span><span class='love-num'>32</span></a>
+                        <a href="javscript:void(0);" class="enter"><span>&#xe6be;</span></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <a href="javscript:void(0);" style="background-image:url(images/special-detailed/header-pic01.jpg)"></a>
+                        MOSTAZA
+                    </p>
+                    <div class="img-box">
+                        <a href="details.html">
+                            <img src="images/special-detailed/special-detailed02.jpg" alt="">
+                            <span><i>￥</i>3890</span>
+                        </a>
+                    </div>
+                    <div class="operation">
+                        <a href="javscript:void(0);" class="comment"><span>&#xe64f;</span><span class="item-num">24</span></a>
+                        <a href="javscript:void(0);" class="fabulous love"><span class="love-img">&#xe639;</span><span class='love-num'>32</span></a>
+                        <a href="javscript:void(0);" class="enter"><span>&#xe6be;</span></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <a href="javscript:void(0);" style="background-image:url(images/special-detailed/header-pic02.jpg)"></a>
+                        SCALED
+                    </p>
+                    <div class="img-box">
+                        <a href="details.html">
+                            <img src="images/special-detailed/special-detailed03.jpg" alt="">
+                            <span><i>￥</i>296</span>
+                        </a>
+                    </div>
+                    <div class="operation">
+                        <a href="javscript:void(0);" class="comment"><span>&#xe64f;</span><span class="item-num">24</span></a>
+                        <a href="javscript:void(0);" class="fabulous"><span class="love-img">&#xe639;</span><span class='love-num'>32</span></a>
+                        <a href="javscript:void(0);" class="enter"><span>&#xe6be;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $('#back').mousedown(function() {
+        window.history.back();
+    });
+    $('.share').on('mousedown', '.fabulous', function() {
+        $(this).toggleClass('love')
+            .find('.love-num')
+            .text($(this).hasClass('love') ?
+                parseInt($(this).find('.love-num').text()) + 1 :
+                parseInt($(this).find('.love-num').text()) - 1);
+    })
+    </script>
+</body>
+
+</html>

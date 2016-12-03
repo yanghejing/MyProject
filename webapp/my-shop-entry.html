@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>my-noentry</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/my-shop-entry.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="lib/base.js"></script>
+	<script type="text/javascript" src="lib/zepto.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<p class="left"><a href="javascript:void(0)" class="back">&#xe619;</a></p>
+			<p class="left">登录</p>
+		</header>
+		<section class="my-shop-account">
+			<p class="left">账号：</p>
+			<p class="left"><input type="text" placeholder="用户名/手机号" class="label"></p>
+		</section>
+		<section class="my-shop-account">
+			<p class="left">密码：</p>
+			<p class="left"><input type="password" placeholder="请输入密码" class="label1"></p>
+		</section>
+		<section class="my-shop-entry"><a href="javascript:void(0)">登录</a></section>
+		<section class="my-shop-entry1">
+			<p><a href="javascript:void(0)"> 快速注册</a></p>
+			<p><a href="javascript:void(0)"> 找回密码</a></p>
+		</section>
+	</div>
+	<script type="text/javascript">
+
+		$('.my-shop-entry a').click(function(){
+			validateCode();
+		})
+
+		function validateCode() {
+
+	        if ($('.label').val() == '') {
+	            alert('账号不能为空');
+	        } else if($('.label1').val() == '') {
+	            alert('密码不能为空');
+	        }else{
+	            var un = /((^w+[-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*$)|(^[1][358][0-9]{9}$)/;
+
+	            var psd = $('.label').val();
+	            if(!un.test(psd)){
+	                alert('账号格式不对');
+	            }else{
+	                window.location.href = 'home.html';
+	            }
+	        }
+	    }
+	    $(".label1,.label").on("propertychange input",function(){
+	    	if($(".label").val()!="" && $(".label1").val()!=""){
+	    		$('.my-shop-entry a').css({
+	    			backgroundColor: '#f32d45',
+	    			color: '#fff'
+	    		});
+	    	}
+	    	else{
+	    		$('.my-shop-entry a').css({
+	    			backgroundColor: '#eee',
+	    			color: '#333'
+	    		});
+	    	}
+	    });
+	    $('.back').on('mousedown',function(){
+	    	console.log(window.history.back())
+	    })
+	</script>
+</body>
+</html>

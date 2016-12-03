@@ -1,0 +1,102 @@
+$iconfont: "iconfont";
+$imgwidth: 100%;
+$box-sizing: border-box;
+$left: left;
+$right: right;
+$padding: 0 0.2rem;
+$border: 1px solid #e6e6e6;
+$main-color: #333;
+$main-color-active: #a28362;
+.wrapper{
+	max-width: 6.4rem;
+	min-width: 3.2rem;
+	margin: 0 auto;
+	font-size: 0.2rem;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: $iconfont;
+	box-sizing: $box-sizing;
+	color: $main-color;
+	padding: 0 0.2rem;
+}
+img{
+	width: $imgwidth;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+input{
+	border: none;
+	outline: none;
+}
+header{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	font-size: 0.36rem;
+	margin-bottom: 0.4rem;
+}
+header{
+	p:nth-of-type(1){
+		a{
+			display: block;
+			color: $main-color;
+			width: 100%;
+			text-align: center;
+		} 
+	}
+	p:nth-of-type(2){
+		width: 90%;
+		text-align: center;
+	}
+}
+.my-shop-account{
+	height: 1rem;
+	font-size: 0.4rem;
+	border-bottom: 1px solid #eee;
+}
+.my-shop-account{
+	p:nth-of-type(1){
+		padding-right: 0.2rem;
+		line-height: 1rem;
+	}
+	p:nth-of-type(2){
+		input{
+			width: 3rem;
+			line-height: 1rem;
+			font-size: 0.3rem;
+		}
+	}
+}
+.my-shop-entry{
+	a{
+		display: block;
+		width: 90%;
+		height: 0.7rem;
+		font-size: 0.32rem;
+		color: #333;
+		text-align: center;
+		line-height: 0.7rem;
+		background-color: #eee;
+		border-radius: 0.1rem;
+		margin: 0.4rem auto;
+	}
+}
+.my-shop-entry1{
+	display: flex;
+	justify-content: space-between;
+}
+.my-shop-entry1{
+	a{
+		color: $main-color;
+		font-size: 0.3rem;
+	}
+}
