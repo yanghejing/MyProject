@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/details.css">
+	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src='js/distpicker.data.js'></script>
+	<script type="text/javascript" src='js/mode.js'></script>
+</head>
+<body>
+	<!--  Header Start  -->
+<div class="header">
+	<!-- nav Start -->
+	<div class="topNav">
+		<div class="centerBox clr">
+			<div class="topNavRight">
+				<span class="hi">你好，请<a href="#" class="loginIn">登录</a><a href="#" class="register">免费注册</a></span>
+				<ul>
+					<li class="verticalLine"></li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li class="verticalLine"></li>
+					<li class="self dpDown">
+						<a href="#">我的COUUO<span></span></a>
+						<div class="selfBox">
+							<p>您好，请先<a href="#">登录</a></p>
+						</div>
+						<div class="dpDownLine"></div>
+					</li>
+					<li class="verticalLine"></li>
+					<li><a href="#">COUUO会员</a></li>
+					<li class="verticalLine"></li>
+					<li>
+						<a href="#">企业采购</a>
+					</li>
+					<li class="verticalLine"></li>
+					<li class="phoneShow dpDown">
+						<div class="phoneShowBox">
+							<img src="images/header/phoneShop.jpg" alt="">
+						</div>
+						<a href="#" class="pShop">手机购物</a>
+						<div class="dpDownLine"></div>
+					</li>
+					<li class="verticalLine"></li>
+					<li class="dpDown fllow">
+						<div class="fllowBox">
+							<img src="images/header/followIcon.jpg" alt="">
+						</div>
+						<a href="#">关注COUUO<span></span></a>
+						<div class="dpDownLine"></div>
+					</li>
+					<li class="verticalLine"></li>
+					<li class="dpDown">
+						<a href="#">客户服务<span></span></a>
+						<div class="service">
+							<p class="item item-h">客户</p>
+							<p class="item"><a href="" target="_blank" true="">帮助中心</a></p>
+							<p class="item"><a href="" target="_blank" true="">售后服务</a></p>
+							<p class="item"><a href="" target="_blank" true="">在线客服</a></p>
+							<p class="item"><a href="" target="_blank" true="">意见建议</a></p>
+							<p class="item"><a href="" target="_blank" true="">电话客服</a></p>
+							<p class="item"><a href="" target="_blank" true="">客服邮箱</a></p>
+							<p class="item"><a href="" target="_blank" true="">金融咨询</a></p>
+							<p class="item item-h">商户</p>
+							<p class="item"><a href="" target="_blank" true="">京东商学院</a></p>
+							<p class="item"><a href="" target="_blank" true="">商家入驻</a></p>
+						</div>
+						<div class="dpDownLine"></div>
+					</li>
+					<li class="verticalLine"></li>
+					<li><a href="#">网站导航</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+    <!-- nav  End-->
+</div>
+<!--  Header End  -->
+	<div class="search">
+		<div class="box clearfix">
+			<a class="logo_link" href="index.html"><img src="images/details/logo.png" alt="" /></a>
+			<div class="right">
+				<div class="left sub_search">
+					<form class="clearfix">
+						<input class="input_search" type="text" name="" placeholder="请输出您想要的" >
+						<input class="btn" type="submit" value="搜索">
+					</form>
+					<ul class="clearfix">
+						<li class="act"><a href="javascript:;">一元好货</a></li>
+						<li><a href="javascript:;">清仓</a></li>
+						<li><a href="javascript:;">盆栽绿植</a></li>
+						<li><a href="javascript:;">特惠返场</a></li>
+						<li><a href="javascript:;">一元拿走</a></li>
+						<li><a href="javascript:;">灯具</a></li>
+						<li><a href="javascript:;">拖鞋</a></li>
+						<li><a href="javascript:;">0元试用</a></li>
+						<li><a href="javascript:;">surface</a></li>
+					</ul>
+				</div>
+				<div class="details-shop-car left">
+					<a href="javascript:;">
+						我的购物车
+					</a>
+					<div class="details-add">
+						<div class="none">购物车中还没有商品，赶紧购物吧</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="all_nav">
+		<div class="box clearfix">
+			<div class="all_goods left">
+				<span>全部商品分类</span><img src="images/details/down_arrow.png" alt="" />
+				<ul id="goods">
+					<li><a href="#">家用电器</a></li>
+					<li><a href="#">手机、运营商、数码</a></li>
+					<li><a href="#">电脑办公</a></li>
+					<li><a href="#">家居、家具、家装、厨具</a></li>
+					<li><a href="#">男装、女装、童装、内衣</a></li>
+					<li><a href="#">个护化妆、清洁用品、宠物</a></li>
+					<li><a href="#">鞋靴、箱包、珠宝、奢侈品</a></li>
+					<li><a href="#">运动、户外、钟表</a></li>
+					<li><a href="#">汽车、汽车用品</a></li>
+					<li><a href="#">母婴、玩具乐器</a></li>
+					<li><a href="#">食品、酒类、生鲜、特产</a></li>
+					<li><a href="#">医药保健</a></li>
+					<li><a href="#">图书、音像、电子书</a></li>
+					<li><a href="#">彩票、旅行、充值、票务</a></li>
+					<li><a href="#">理财、众筹、白条、保险</a></li>			
+				</ul>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">电视 ></a></strong></dt>
+						<dd><a href="#">合资品牌</a></dd>
+						<dd><a href="#">国产品牌</a></dd>
+						<dd><a href="#">互联网品牌</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">空调 ></a></strong></dt>
+						<dd><a href="#">壁挂式空调</a></dd>
+						<dd><a href="#">柜式空调</a></dd>
+						<dd><a href="#">中央空调</a></dd>
+						<dd><a href="#">空调配件</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">洗衣机 ></a></strong></dt>
+						<dd><a href="#">滚筒洗衣机</a></dd>
+						<dd><a href="#">洗烘一体机</a></dd>
+						<dd><a href="#">波轮洗衣机</a></dd>
+						<dd><a href="#">洗衣机配件</a></dd>
+						<dd><a href="#">迷你洗衣机</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">冰箱 ></a></strong></dt>
+						<dd><a href="#">多门</a></dd>
+						<dd><a href="#">对开门</a></dd>
+						<dd><a href="#">三门</a></dd>
+						<dd><a href="#">双门</a></dd>
+						<dd><a href="#">冷柜/冰吧</a></dd>
+						<dd><a href="#">酒柜</a></dd>
+						<dd><a href="#">冰箱配件</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">厨卫大电 ></a></strong></dt>
+						<dd><a href="#">油烟机</a></dd>
+						<dd><a href="#">燃气罩</a></dd>
+						<dd><a href="#">烟罩套装</a></dd>
+						<dd><a href="#">消毒柜</a></dd>
+						<dd><a href="#">洗碗机</a></dd>
+						<dd><a href="#">电热水器</a></dd>
+						<dd><a href="#">燃气热水器</a></dd>
+						<dd><a href="#">嵌入式厨电</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">厨卫大电 ></a></strong></dt>
+						<dd><a href="#">油烟机</a></dd>
+						<dd><a href="#">燃气罩</a></dd>
+						<dd><a href="#">烟罩套装</a></dd>
+						<dd><a href="#">消毒柜</a></dd>
+						<dd><a href="#">洗碗机</a></dd>
+						<dd><a href="#">电热水器</a></dd>
+						<dd><a href="#">燃气热水器</a></dd>
+						<dd><a href="#">嵌入式厨电</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">厨房小电 ></a></strong></dt>
+						<dd><a href="#">电饭煲</a></dd>
+						<dd><a href="#">微波炉</a></dd>
+						<dd><a href="#">电烤箱</a></dd>
+						<dd><a href="#">电磁炉</a></dd>
+						<dd><a href="#">电压力锅</a></dd>
+						<dd><a href="#">豆浆机</a></dd>
+						<dd><a href="#">咖啡机</a></dd>
+						<dd><a href="#">面包机</a></dd>
+						<dd><a href="#">榨汁机</a></dd>
+						<dd><a href="#">料理机</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">生活电器 ></a></strong></dt>
+						<dd><a href="#">取暖电器</a></dd>
+						<dd><a href="#">吸尘器</a></dd>
+						<dd><a href="#">净化器</a></dd>
+						<dd><a href="#">扫地机器人</a></dd>
+						<dd><a href="#">加湿器</a></dd>
+						<dd><a href="#">挂烫机/熨斗</a></dd>
+						<dd><a href="#">电风扇</a></dd>
+						<dd><a href="#">冷风扇</a></dd>
+						<dd><a href="#">插座</a></dd>
+					</dl>
+
+					<dl class="clearfix">
+						<dt><strong><a href="#">个护健康 ></a></strong></dt>
+						<dd><a href="#">剃须刀</a></dd>
+						<dd><a href="#">口腔护理</a></dd>
+						<dd><a href="#">电吹风</a></dd>
+						<dd><a href="#">美容器</a></dd>
+						<dd><a href="#">卷/直发器</a></dd>
+						<dd><a href="#">理发器</a></dd>
+						<dd><a href="#">脱毛器</a></dd>
+						<dd><a href="#">足浴盆</a></dd>
+						<dd><a href="#">按摩器</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">家庭影音 ></a></strong></dt>
+						<dd><a href="#">家庭影院</a></dd>
+						<dd><a href="#">迷你音响</a></dd>
+						<dd><a href="#">DVD</a></dd>
+						<dd><a href="#">电视影音配件</a></dd>
+					</dl>
+
+					<dl class="clearfix">
+						<dt><strong><a href="#">进口电器 ></a></strong></dt>
+						<dd><a href="#">进口电器</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">手机通讯 ></a></strong></dt>
+						<dd><a href="#">手机</a></dd>
+						<dd><a href="#">对讲机</a></dd>
+						<dd><a href="#">以旧换新</a></dd>
+						<dd><a href="#">手机维修</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">运营商 ></a></strong></dt>
+						<dd><a href="#">充话费/流量</a></dd>
+						<dd><a href="#">合约机</a></dd>
+						<dd><a href="#">办套餐</a></dd>
+						<dd><a href="#">选号码</a></dd>
+						<dd><a href="#">京东通信</a></dd>
+						<dd><a href="#">中国移动</a></dd>
+						<dd><a href="#">中国电信</a></dd>
+						<dd><a href="#">中国联通</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">手机配件 ></a></strong></dt>
+						<dd><a href="#">手机壳</a></dd>
+						<dd><a href="#">数据线</a></dd>
+						<dd><a href="#">充电器</a></dd>
+						<dd><a href="#">手机耳机</a></dd>
+						<dd><a href="#">创意配件</a></dd>
+						<dd><a href="#">手机饰品</a></dd>
+						<dd><a href="#">蓝牙耳机</a></dd>
+						<dd><a href="#">手机电池</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">摄影摄像 ></a></strong></dt>
+						<dd><a href="#">数码相机</a></dd>
+						<dd><a href="#">单电/微单相机</a></dd>
+						<dd><a href="#">单反相机</a></dd>
+						<dd><a href="#">拍立得</a></dd>
+						<dd><a href="#">运动相机</a></dd>
+						<dd><a href="#">摄像头</a></dd>
+						<dd><a href="#">镜头</a></dd>
+						<dd><a href="#">户外器材</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">数码配件 ></a></strong></dt>
+						<dd><a href="#">存储卡</a></dd>
+						<dd><a href="#">三脚架/云台</a></dd>
+						<dd><a href="#">相机包</a></dd>
+						<dd><a href="#">滤镜</a></dd>
+						<dd><a href="#">闪光灯/手柄</a></dd>
+						<dd><a href="#">相机清洁/贴膜</a></dd>
+						<dd><a href="#">相机附件</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">影音娱乐 ></a></strong></dt>
+						<dd><a href="#">耳机/耳麦</a></dd>
+						<dd><a href="#">音箱/音响</a></dd>
+						<dd><a href="#">便携/无线音箱</a></dd>
+						<dd><a href="#">收音机</a></dd>
+						<dd><a href="#">麦克风</a></dd>
+						<dd><a href="#">MP3/MP4</a></dd>
+						<dd><a href="#">专业音频</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">智能设备 ></a></strong></dt>
+						<dd><a href="#">智能手环</a></dd>
+						<dd><a href="#">智能手表</a></dd>
+						<dd><a href="#">智能眼镜</a></dd>
+						<dd><a href="#">智能机器人</a></dd>
+						<dd><a href="#">运动跟踪器</a></dd>
+						<dd><a href="#">健康监测</a></dd>
+						<dd><a href="#">智能家居</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">电子教育 ></a></strong></dt>
+						<dd><a href="#">学生平板</a></dd>
+						<dd><a href="#">点读机/笔</a></dd>
+						<dd><a href="#">早教益智</a></dd>
+						<dd><a href="#">录音笔</a></dd>
+						<dd><a href="#">电子书</a></dd>
+						<dd><a href="#">电子词典</a></dd>
+						<dd><a href="#">复读机</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+								<p class="name"><a href="#">清洁用品 ></a></p>
+								<p class="name"><a href="#">美妆商城 ></a></p>
+								<p class="name"><a href="#">官方旗舰店 ></a></p>
+								<p class="name"><a href="#">美妆特卖 ></a></p>
+								<p class="name"><a href="#">努比社 ></a></p>
+								<p class="name"><a href="#">超市 ></a></p>
+						</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">电脑整机 ></a></strong></dt>
+						<dd><a href="#">笔记本</a></dd>
+						<dd><a href="#">游戏本</a></dd>
+						<dd><a href="#">平板电脑</a></dd>
+						<dd><a href="#">平板电脑配件</a></dd>
+						<dd><a href="#">台式机</a></dd>
+						<dd><a href="#">一体机</a></dd>
+						<dd><a href="#">笔记本配件</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">电脑配件 ></a></strong></dt>
+						<dd><a href="#">显示器</a></dd>
+						<dd><a href="#">CPU</a></dd>
+						<dd><a href="#">主板</a></dd>
+						<dd><a href="#">硬盘</a></dd>
+						<dd><a href="#">内存</a></dd>
+						<dd><a href="#">机箱</a></dd>
+						<dd><a href="#">电源</a></dd>
+						<dd><a href="#">散热器</a></dd>
+						<dd><a href="#">刻录机/光驱</a></dd>
+						<dd><a href="#">声卡/扩展卡</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">外设产品 ></a></strong></dt>
+						<dd><a href="#">鼠标</a></dd>
+						<dd><a href="#">键盘</a></dd>
+						<dd><a href="#">鼠标套装</a></dd>
+						<dd><a href="#">网络仪表仪器</a></dd>
+						<dd><a href="#">U盘</a></dd>
+						<dd><a href="#">移动硬盘</a></dd>
+						<dd><a href="#">鼠标垫</a></dd>
+						<dd><a href="#">摄像头</a></dd>
+						<dd><a href="#">线缆</a></dd>
+						<dd><a href="#">手写板</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">游戏设备 ></a></strong></dt>
+						<dd><a href="#">游戏机</a></dd>
+						<dd><a href="#">游戏耳机</a></dd>
+						<dd><a href="#">手柄/方向盘</a></dd>
+						<dd><a href="#">游戏软件</a></dd>
+						<dd><a href="#">游戏周边</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">网络产品 ></a></strong></dt>
+						<dd><a href="#">网络机顶盒</a></dd>
+						<dd><a href="#">交换机</a></dd>
+						<dd><a href="#">网络存储</a></dd>
+						<dd><a href="#">网卡</a></dd>
+						<dd><a href="#">4G/3G上网</a></dd>
+						<dd><a href="#">网络配件</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">办公设备 ></a></strong></dt>
+						<dd><a href="#">摄影机</a></dd>
+						<dd><a href="#">摄影配件</a></dd>
+						<dd><a href="#">多功能一体机</a></dd>
+						<dd><a href="#">打印机</a></dd>
+						<dd><a href="#">传真设备</a></dd>
+						<dd><a href="#">验钞/点钞机</a></dd>
+						<dd><a href="#">扫描设备</a></dd>
+						<dd><a href="#">碎纸机</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">文具耗材 ></a></strong></dt>
+						<dd><a href="#">硒鼓/墨粉</a></dd>
+						<dd><a href="#">墨盒</a></dd>
+						<dd><a href="#">色带</a></dd>
+						<dd><a href="#">纸类</a></dd>
+						<dd><a href="#">办公文具</a></dd>
+						<dd><a href="#">学生文具</a></dd>
+						<dd><a href="#">文件管理</a></dd>
+						<dd><a href="#">本册/便签</a></dd>
+						<dd><a href="#">计算器</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">服务产品 ></a></strong></dt>
+						<dd><a href="#">延保服务</a></dd>
+						<dd><a href="#">上门安装</a></dd>
+						<dd><a href="#">维修保养</a></dd>
+						<dd><a href="#">电脑软件</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">家具 ></a></strong></dt>
+						<dd><a href="#">卧室家具</a></dd>
+						<dd><a href="#">客厅家具</a></dd>
+						<dd><a href="#">书房家具</a></dd>
+						<dd><a href="#">儿童家具</a></dd>
+						<dd><a href="#">商业办公</a></dd>
+						<dd><a href="#">沙发</a></dd>
+						<dd><a href="#">床垫</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">家装建材 ></a></strong></dt>
+						<dd><a href="#">厨房卫浴</a></dd>
+						<dd><a href="#">装修服务</a></dd>
+						<dd><a href="#">五金工具</a></dd>
+						<dd><a href="#">智能马桶盖</a></dd>
+						<dd><a href="#">电工电料</a></dd>
+						<dd><a href="#">吸顶灯</a></dd>
+						<dd><a href="#">开关插座</a></dd>
+						<dd><a href="#">油漆涂料</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">家装软式 ></a></strong></dt>
+						<dd><a href="#">家具3免1</a></dd>
+						<dd><a href="#">桌布/罩件</a></dd>
+						<dd><a href="#">地毯地垫</a></dd>
+						<dd><a href="#">装饰字画</a></dd>
+						<dd><a href="#">装饰摆件</a></dd>
+						<dd><a href="#">手工/十字绣</a></dd>
+						<dd><a href="#">节庆饰品</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">厨具 ></a></strong></dt>
+						<dd><a href="#">烹饪锅具</a></dd>
+						<dd><a href="#">厨房配件</a></dd>
+						<dd><a href="#">餐具</a></dd>
+						<dd><a href="#">茶具</a></dd>
+						<dd><a href="#">水具酒具</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">生活用品 ></a></strong></dt>
+						<dd><a href="#">收纳用品</a></dd>
+						<dd><a href="#">雨伞</a></dd>
+						<dd><a href="#">浴室用品</a></dd>
+						<dd><a href="#">清洁工具</a></dd>
+						<dd><a href="#">净化除味</a></dd>
+						<dd><a href="#">针织用品</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">灯具 ></a></strong></dt>
+						<dd><a href="#">台灯</a></dd>
+						<dd><a href="#">吸顶灯</a></dd>
+						<dd><a href="#">LED照明灯</a></dd>
+						<dd><a href="#">节能灯</a></dd>
+						<dd><a href="#">落地灯</a></dd>
+						<dd><a href="#">吊灯</a></dd>
+						<dd><a href="#">装饰灯</a></dd>
+						<dd><a href="#">氛围照明</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">品牌男装 ></a></strong></dt>
+						<dd><a href="#">时尚羽绒服</a></dd>
+						<dd><a href="#">保暖棉服</a></dd>
+						<dd><a href="#">修身夹克</a></dd>
+						<dd><a href="#">牛仔裤</a></dd>
+						<dd><a href="#">西装</a></dd>
+						<dd><a href="#">商务男装</a></dd>
+						<dd><a href="#">休闲裤</a></dd>
+						<dd><a href="#">运动装</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">潮流女装 ></a></strong></dt>
+						<dd><a href="#">新品连衣裙</a></dd>
+						<dd><a href="#">针织开衫</a></dd>
+						<dd><a href="#">羽绒服</a></dd>
+						<dd><a href="#">皮草</a></dd>
+						<dd><a href="#">高领毛衣</a></dd>
+						<dd><a href="#">牛仔裤</a></dd>
+						<dd><a href="#">毛呢外套</a></dd>
+						<dd><a href="#">短外套</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">母婴童装 ></a></strong></dt>
+						<dd><a href="#">裙子</a></dd>
+						<dd><a href="#">儿童保暖</a></dd>
+						<dd><a href="#">羽绒服</a></dd>
+						<dd><a href="#">运动鞋</a></dd>
+						<dd><a href="#">品牌童装</a></dd>
+						<dd><a href="#">亲子装</a></dd>
+						<dd><a href="#">儿童配饰</a></dd>
+						<dd><a href="#">帆布鞋</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">内衣配饰 ></a></strong></dt>
+						<dd><a href="#">秋衣秋裤</a></dd>
+						<dd><a href="#">保暖内衣</a></dd>
+						<dd><a href="#">保暖套装</a></dd>
+						<dd><a href="#">女子睡衣</a></dd>
+						<dd><a href="#">男子睡衣</a></dd>
+						<dd><a href="#">真丝睡衣</a></dd>
+						<dd><a href="#">情侣睡衣</a></dd>
+						<dd><a href="#">睡裙</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">面部护肤 ></a></strong></dt>
+						<dd><a href="#">美妆狂欢</a></dd>
+						<dd><a href="#">卸妆</a></dd>
+						<dd><a href="#">洁面</a></dd>
+						<dd><a href="#">面膜</a></dd>
+						<dd><a href="#">精品防晒</a></dd>
+						<dd><a href="#">爽肤水</a></dd>
+						<dd><a href="#">乳液精化</a></dd>
+						<dd><a href="#">眼霜</a></dd>
+						<dd><a href="#">套装</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">洗发护发 ></a></strong></dt>
+						<dd><a href="#">洗发</a></dd>
+						<dd><a href="#">护发</a></dd>
+						<dd><a href="#">染发</a></dd>
+						<dd><a href="#">造型</a></dd>
+						<dd><a href="#">假发</a></dd>
+						<dd><a href="#">美发工具</a></dd>
+						<dd><a href="#">套装</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">口腔护理 ></a></strong></dt>
+						<dd><a href="#">牙膏/牙粉</a></dd>
+						<dd><a href="#">牙刷/牙线</a></dd>
+						<dd><a href="#">漱口水</a></dd>
+						<dd><a href="#">套装</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">身体护理 ></a></strong></dt>
+						<dd><a href="#">沐浴</a></dd>
+						<dd><a href="#">润肤</a></dd>
+						<dd><a href="#">精油</a></dd>
+						<dd><a href="#">颈部</a></dd>
+						<dd><a href="#">手足</a></dd>
+						<dd><a href="#">塑形</a></dd>
+						<dd><a href="#">套装</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">清洁用品 ></a></strong></dt>
+						<dd><a href="#">个护清洁</a></dd>
+						<dd><a href="#">纸品清洁</a></dd>
+						<dd><a href="#">清洁工具</a></dd>
+						<dd><a href="#">家庭清洁</a></dd>
+						<dd><a href="#">一次性用品</a></dd>
+						<dd><a href="#">驱虫用品</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">香水彩妆 ></a></strong></dt>
+						<dd><a href="#">女士香水</a></dd>
+						<dd><a href="#">男士香水</a></dd>
+						<dd><a href="#">底妆</a></dd>
+						<dd><a href="#">眉笔</a></dd>
+						<dd><a href="#">睫毛膏</a></dd>
+						<dd><a href="#">眼线</a></dd>
+						<dd><a href="#">眼影</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">宠物生活 ></a></strong></dt>
+						<dd><a href="#">萌宠汇聚</a></dd>
+						<dd><a href="#">水族用品</a></dd>
+						<dd><a href="#">宠物主粮</a></dd>
+						<dd><a href="#">宠物零食</a></dd>
+						<dd><a href="#">洗护美容</a></dd>
+						<dd><a href="#">宠物玩具</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+							<dt><strong><a href="#">鞋靴箱包 ></a></strong></dt>
+							<dd><a href="#">休闲鞋</a></dd>
+							<dd><a href="#">商务鞋</a></dd>
+							<dd><a href="#">雪地棉</a></dd>
+							<dd><a href="#">公文包</a></dd>
+						</dl>
+					<dl class="clearfix">
+						<dt><strong><a href="#">7合资品牌 ></a></strong></dt>
+						<dd><a href="#">7合资品牌</a></dd>
+						<dd><a href="#">7合资品牌</a></dd>
+						<dd><a href="#">7合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">8合资品牌 ></a></strong></dt>
+						<dd><a href="#">8合资品牌</a></dd>
+						<dd><a href="#">8合资品牌</a></dd>
+						<dd><a href="#">8合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">9合资品牌 ></a></strong></dt>
+						<dd><a href="#">9合资品牌</a></dd>
+						<dd><a href="#">9合资品牌</a></dd>
+						<dd><a href="#">9合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">合资品牌 ></a></strong></dt>
+						<dd><a href="#">10合资品牌</a></dd>
+						<dd><a href="#">10合资品牌</a></dd>
+						<dd><a href="#">10合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">合资品牌 ></a></strong></dt>
+						<dd><a href="#">合资品牌</a></dd>
+						<dd><a href="#">11合资品牌</a></dd>
+						<dd><a href="#">11合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">合资品牌 ></a></strong></dt>
+						<dd><a href="#">12合资品牌</a></dd>
+						<dd><a href="#">12合资品牌</a></dd>
+						<dd><a href="#">12合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">合资品牌 ></a></strong></dt>
+						<dd><a href="#">13合资品牌</a></dd>
+						<dd><a href="#">13合资品牌</a></dd>
+						<dd><a href="#">13合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">合资品牌 ></a></strong></dt>
+						<dd><a href="#">14合资品牌</a></dd>
+						<dd><a href="#">14合资品牌</a></dd>
+						<dd><a href="#">14合资品牌</a></dd>
+					</dl>
+				</div>
+				<div id="goods-detail" class="goods-detail" style="display:none;">
+					<div class="clearfix">
+							<p class="name"><a href="#">清洁用品 ></a></p>
+							<p class="name"><a href="#">美妆商城 ></a></p>
+							<p class="name"><a href="#">官方旗舰店 ></a></p>
+							<p class="name"><a href="#">美妆特卖 ></a></p>
+							<p class="name"><a href="#">努比社 ></a></p>
+							<p class="name"><a href="#">超市 ></a></p>
+					</div>
+					<dl class="clearfix">
+						<dt><strong><a href="#">合资品牌 ></a></strong></dt>
+						<dd><a href="#">15合资品牌</a></dd>
+						<dd><a href="#">15合资品牌</a></dd>
+						<dd><a href="#">15合资品牌</a></dd>
+					</dl>
+				</div>
+				<!-- 下拉单 end-->
+			</div>
+			<ul class="goods_nav right">
+				
+		        <li class="first_page active"><a href="index.html">首页</a></li>
+				<li><a href="clothing.html">服装城</a></li>
+				<li><a href="#">美妆馆</a></li>
+				<li><a href="supermarket.html">超市</a></li>
+				<li><a href="globalall.html">全球购</a></li>
+				<li><a href="tuan.html">团购</a></li>
+				<li><a href="flashsales.html">闪购</a></li>
+				<li><a href="auction.html">拍卖</a></li>
+				<li class="last_page"><a href="financial.html">金融</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="details">
+		<div class="box">
+			<div class="details_nav">
+				<span class="details_person"><a href="">个护化妆</a></span>
+				<span class="ljf">&gt;</span>
+				<span><a href="">面部护肤</a></span>
+				<span class="ljf">&gt;</span>
+				<span><a href="">防晒</a></span>
+				<span class="ljf">&gt;</span>
+				<span><a href="">安热沙(ANESSA)</a></span>
+				<span class="ljf">&gt;</span>
+				<span><a href="">安热沙防晒霜</a></span>
+			</div>
+			<div class="details_pic clearfix">
+				<div class="pic left">
+					<div class="big_pic" id="div1">
+						<div id="div2">
+							<ul>
+								<li style="z-index: 2;"><img src="images/details/de-m1.jpg" alt="" /></li>
+								<li><img src="images/details/de-m2.jpg" alt="" /></li>
+								<li><img src="images/details/de-m3.jpg" alt="" /></li>
+								<li><img src="images/details/de-m4.jpg" alt="" /></li>
+								<li><img src="images/details/de-m5.jpg" alt="" /></li>
+								<li><img src="images/details/de-m6.jpg" alt="" /></li>
+							</ul>
+							<!-- 添加大图start -->
+							
+							<span id="span1" class="box-small"></span>
+							<span id="span2" class="box-big"></span>
+						</div>	
+						<ul class="img-big" id="div3">
+							<li style="z-index: 3;"><img src="images/details/de-l1.jpg" alt=""></li>
+							<li><img src="images/details/de-l2.jpg" alt=""></li>
+							<li><img src="images/details/de-l3.jpg" alt=""></li>
+							<li><img src="images/details/de-l4.jpg" alt=""></li>
+							<li><img src="images/details/de-l5.jpg" alt=""></li>
+							<li><img src="images/details/de-l6.jpg" alt=""></li>
+						</ul>
+						<!-- 添加大图end -->
+					</div>
+					<div class="small_pic clearfix">
+						<div class="move_right left"><img src="images/details/move_left.jpg" /></div>
+						<div class="mark left">
+							<ul class="clearfix">
+								<li class="act"><img src="images/details/de-s1.jpg" alt="" /></li>
+								<li><img src="images/details/de-s2.jpg" alt="" /></li>
+								<li><img src="images/details/de-s3.jpg" alt="" /></li>
+								<li><img src="images/details/de-s4.jpg" alt="" /></li>
+								<li><img src="images/details/de-s5.jpg" alt="" /></li>
+								<li><img src="images/details/de-s6.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<div class="move_left right">
+							<img src="images/details/move_right.jpg" />
+						</div>
+					</div>
+					<div class="share_product">
+						<span>商品编号：455689</span>
+						<a href="#"><span class="share"><img src="images/details/share.png" />分享</span></a>
+						<a href="#"><span><img src="images/details/red_heart.png" />关注商品</span></a>
+					</div>
+				</div>
+				<div class="describe left">
+					<h3>安热沙（ANESSA）防晒露60ml（小金瓶 资生堂安耐晒 SPF50+ 防晒露防晒霜防水防汗）</h3>
+					<span>【ANESSA，美妆速达】</span>
+					<a href="">带上安热沙，向阳光出发！尽在Anessa安热沙旗舰店</a>
+					<div class="message">
+						<div class="clearfix message_price">
+							<ul class="left">
+								<li class="specil_price">
+									特价：<span>￥240.00元</span>(特价通知)
+								</li>
+								<li class="go_phone">促销信息：<span class="phone_price">手机专享价</span><span>￥239.00</span><a href="">去手机购买<img src="images/details/phone.jpg" alt="" /></a></li>
+								<li><span class="phone_limit">限购</span><span>购买1-500件时享受优惠</span></li>
+							</ul>
+							<div class="evaluate right">
+								累计评价<div><a href="">3422</a></div>
+							</div>
+						</div>
+						<div class="support">支持：
+							<a href="">
+								<img src="images/details/gift.jpg" /><span>礼品购</span>
+							</a>
+						</div>
+						<div class="site clearfix">
+							<div class="left">配送至：</div>
+							<div class="site-home left">
+								<div class="site-address left">
+									<div class="site-default"><em>北京朝阳区三环以内</em><img src="images/details/arrow.png" alt=""></div>
+									<div class="slide-down">
+										<ul class="clearfix">
+											<li><em>北京市</em><img src="images/details/arrow.png" alt="" /></li>
+											<li><em>朝阳区</em><img src="images/details/arrow.png" alt="" /></li>
+											<li><em>三环以内</em><img src="images/details/arrow.png" alt="" /></li>
+										</ul>
+										<dl id="count1" class="clearfix">
+										</dl>
+										<dl id="count2" class="clearfix">
+										</dl>
+										<dl id="count3" class="clearfix">
+										</dl>
+									</div>
+								</div>
+								<div class="left"><span class="goods">有货</span>
+								<span>支持99元免运费 货到付款</span></div>
+							</div> 
+						</div>
+						<div>
+							服务：由 京东 发货，并提供售后服务。11:10前完成下单,预计今天(06月23日)送达
+						</div>
+					</div>
+					<ul class="product_detail clearfix">
+						<li class="product clearfix">
+							<div class="left">选择产品：</div>
+							<dl class="left">
+								<dd><img src="images/details/product_img1.jpg" />防晒露60ml</dd>
+								<dd><img src="images/details/product_img2.jpg" />防晒乳25ml</dd>
+								<dd><img src="images/details/product_img3.jpg" />精华防晒露40ml</dd>
+								<dd><img src="images/details/product_img4.jpg" />润白防晒乳60ml</dd>
+								<dd class="frame"><img src="images/details/product_img5.jpg" />防晒ＢＢ（健康色）</dd>
+								<dd class="frame"><img src="images/details/product_img6.jpg" />防晒ＢＢ（明亮色）</dd>
+								<dd class="frame"><img src="images/details/product_img7.jpg" />防晒啫喱４０ｇ</dd>
+							</dl>
+						</li>
+						<li class="protect clearfix">
+							<div class="left">增值保障：</div>
+							<div class="tool_content left">
+								<img src="images/details/tool.jpg"><i>换新保障￥4.9</i><img src="images/details/black_down_arrow.png" alt="" />
+								<dl class="tool">
+									<dd><input id="tool" type="checkbox"><label for="tool">换新保障￥4.9</label>	</dd>
+								</dl>
+							</div>
+							<div class="tool_face left">
+								<img src="images/details/face.jpg" /><i>美颜保障￥1</i><img src="images/details/black_down_arrow.png" alt="" />
+								<dl class="face">
+									<dd><input id="de-face" type="checkbox"><label for="de-face">美颜保障￥1</label></dd>
+									
+								</dl>
+							</div>
+							
+							
+						</li>
+						<li class="deadline">
+							<div class="left">白条分期：</div>
+							<dl class="left">
+								<dd>30天免息</dd>
+								<dd>￥81.4x3期</dd>
+								<dd>￥41.4x6期</dd>
+								<dd>￥21.4x12期</dd>
+								<dd>￥11.4x24期</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="math_count clearfix">
+						<div class="count left">1</div>
+						<div class="left">
+							<div class="add">+</div>
+							<div class="cut">-</div>
+						</div>
+						<div class="shopping_car left">
+							<img src="images/details/shopping_car.png"/> 加入购物车
+						</div>
+						<div class="de-btn left"><a href="#"></a></div>
+					</div>
+					<div class="ps">温馨提示：支持7天无理由退货</div>
+				</div>
+				<div class="sider left">
+					<div class="img">
+						<img src="images/details/ANESSA.jpg" />
+					</div>
+					<a class="house jl" href=""><img src="images/details/house.png" /> 进店逛逛</a>
+					<a href="" class="jl"><img src="images/details/star.png" /> 关注店铺</a>
+					<div class="serve_support">
+						<div>服务支持：</div>
+						<a class="moon_support" href=""><img src="images/details/moon.png" /> 夜间配</a>
+						<a href=""><img src="images/details/personal.png" /> 自提</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="refer">
+		<div class="box">
+			<div class="today_refer">
+				<div>今日推荐</div>
+				<div style="display: none;" class="today_click">今日推荐</div>
+			</div>
+			<div class="popular">
+				<div>人气单品</div>
+				<div class="pop_click">人气单品</div>
+			</div>
+			
+			<!-- 今日推荐start -->
+			<ul class="refer_pop clearfix" style="display:none;">
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/de-popular1.jpg" alt="" />
+						</p>
+						<div>【专柜行货】安热沙防晒霜安耐晒/spf50女士男士 金瓶80ml</div>
+					</a>
+					<div class="price">￥288.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/de-popular2.jpg" alt="" />
+						</p>
+						<div>安热沙（ANESSA）防晒滋润保湿露</div>
+					</a>
+					<div class="price">￥379.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/de-popular3.jpg" alt="" />
+						</p>
+						<div>[国内专柜行货 顺丰包邮]安热沙防晒露VIP专享 金装款</div>
+					</a>
+					<div class="price">￥259.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/de-popular4.jpg" alt="" />
+						</p>
+						<div>资生堂 安耐晒/安热沙 ANESSA 金瓶防晒霜SPF</div>
+					</a>
+					<div class="price">￥399.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/de-popular5.jpg" alt="" />
+						</p>
+						<div class="image_w">ANESSA安耐晒补水保湿</div>
+					</a>
+					<div class="price">￥489.00</div>
+				</li>
+			</ul>
+			<!-- 今日推荐end -->
+
+			<ul class="refer_pop clearfix">
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/popular_1.jpg" alt="" />
+						</p>
+						<div>【专柜行货】资生堂防晒霜安耐晒/安热沙spf50女士男士 金瓶60ml</div>
+					</a>
+					<div class="price">￥199.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/popular_2.jpg" alt="" />
+						</p>
+						<div>安热沙（ANESSA）防晒滋润保湿套装（小金</div>
+					</a>
+					<div class="price">￥379.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/popular_3.jpg" alt="" />
+						</p>
+						<div>[国内专柜行货 顺丰包邮]安热沙防晒露SPF30+安耐晒小金瓶防晒霜</div>
+					</a>
+					<div class="price">￥259.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/popular_4.jpg" alt="" />
+						</p>
+						<div>资生堂 安耐晒/安热沙 ANESSA 金瓶防晒霜SPF</div>
+					</a>
+					<div class="price">￥399.00</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p class="image">
+							<img src="images/details/popular_5.jpg" alt="" />
+						</p>
+						<div class="image_w">ANESSA安耐晒防水防晒霜SPF50 PA+++ (金</div>
+					</a>
+					<div class="price">￥489.00</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="introduce">
+		<div class="box clearfix">
+			<div class="expend left">
+				<div class="expend_pro expend_all clearfix">
+					<div>相关产品</div>
+					<ul>
+						<li><a href="javascript:;">洁面</a></li>
+						<li class="ex_m"><a href="javascript:;">乳液面霜</a></li>
+						<li><a href="javascript:;">面膜</a></li>
+						<li class="ex_m"><a href="javascript:;">精华</a></li>
+						<li><a href="javascript:;">套装</a></li>
+						<li class="ex_m"><a href="javascript:;">卸妆</a></li>
+						<li><a href="javascript:;">眼霜</a></li>
+						<li class="ex_m"><a href="javascript:;">眼部护理</a></li>
+						<li><a href="javascript:;">防嗮</a></li>
+						<li class="ex_m"><a href="javascript:;">防嗮隔离</a></li>
+						<li><a href="javascript:;">精华露</a></li>
+						<li class="ex_m"><a href="javascript:;">剃须</a></li>
+						<li><a href="javascript:;">T区护理</a></li>
+						<li class="ex_m"><a href="javascript:;">爽肤水</a></li>
+					</ul>
+				</div>
+				<div class="expend_pro expend_all clearfix">
+					<div>同类其他品牌</div>
+					<ul>
+						<li><a href="javascript:;">悦诗风吟</a></li>
+						<li class="ex_m"><a href="javascript:;">韩束</a></li>
+						<li><a href="javascript:;">水密码</a></li>
+						<li class="ex_m"><a href="javascript:;">御泥坊</a></li>
+						<li><a href="javascript:;">美肤宝</a></li>
+						<li class="ex_m"><a href="javascript:;">丸美</a></li>
+						<li><a href="javascript:;">欧诗漫</a></li>
+						<li class="ex_m"><a href="javascript:;">卡姿兰</a></li>
+						<li><a href="javascript:;">百雀羚</a></li>
+						<li class="ex_m"><a href="javascript:;">兰芝</a></li>
+						<li><a href="javascript:;">兰蔻</a></li>
+						<li class="ex_m"><a href="javascript:;">温碧泉</a></li>
+						<li><a href="javascript:;">曼秀雷敦</a></li>
+						<li class="ex_m"><a href="javascript:;">梦妆</a></li>
+					</ul>
+				</div>
+				<div class="expend_sun expend_all">
+					<div>防晒排行榜</div>
+					<ul class="list">
+						<li class="sun1">
+							<a href="javascript:;">
+								<img src="images/details/expend_1.jpg" />
+								<div>
+									<p>欧莱雅眼部精华乳</p>
+									<span>￥199.00</span>
+								</div>
+							</a>
+						</li>
+						<li class="sun2">
+							<a href="javascript:;">
+								<img src="images/details/expend_2.jpg" />
+								<div>
+									<p>欧莱雅男士洁面乳</p>
+									<span>￥299.00</span>
+								</div>
+							</a>
+						</li>
+						<li class="sun3">
+							<a href="javascript:;">
+								<img src="images/details/expend_3.jpg" />
+								<div>
+									<p>欧莱雅防晒防护霜</p>
+									<span>￥229.00</span>
+								</div>
+							</a>
+						</li>
+						<li class="sun4">
+							<a href="javascript:;">
+								<img src="images/details/expend_4.jpg" />
+								<div>
+									<p>欧莱雅女士洁面乳</p>
+									<span>￥179.00</span>
+								</div>
+							</a>
+						</li>
+						<li class="sun5">
+							<a href="javascript:;">
+								<img src="images/details/expend_5.jpg" />
+								<div>
+									<p>欧莱雅BB霜</p>
+									<span>￥169.00</span>
+								</div>
+							</a>
+						</li>
+						<li class="sun6">
+							<a href="javascript:;">
+								<img src="images/details/expend_6.jpg" />
+								<div>
+									<p>欧莱雅多维防晒喷雾</p>
+									<span>￥249.00</span>
+								</div>
+							</a>
+						</li>
+						<li class="sun7">
+							<a href="javascript:;">
+								<img src="images/details/expend_7.jpg" />
+								<div>
+									<p>欧莱雅无暇粉底液</p>
+									<span>￥139.00</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="expend_like expend_all">
+					<div>猜你喜欢</div>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="images/details/like_1.jpg" />
+								<p>欧莱雅套装</p>
+							</a>
+							<div>￥199.00</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/details/like_2.jpg" />
+								<p>欧莱雅眼部精华乳</p>
+							</a>
+							<div>￥129.00</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/details/like_3.jpg" />
+								<p>欧莱雅男士3件套</p>
+							</a>
+							<div>￥299.00</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/details/like_4.jpg" />
+								<p>欧莱雅面霜</p>
+							</a>
+							<div>￥179.00</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/details/like_5.jpg" />
+								<p>欧莱雅BB霜</p>
+							</a>
+							<div>￥109.00</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/details/like_6.jpg" />
+								<p>欧莱雅面部美白霜</p>
+							</a>
+							<div>￥209.00</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="serve left">
+				<div class="serve_nav clearfix">
+					<ul class="left sev_name">
+						<li class="bg act">商品介绍<i class="first"></i></li>
+						<li>规格参数<i></i></li>
+						<li>包装清单<i></i></li>
+						<li class="shopping_eva ">商品评价(11554)<i></i></li>
+						<li class="last">售后服务</li>
+					</ul>
+					<a href="javascript:;">
+						<img src="images/details/shopping_case.png" />
+						加入购物车
+					</a>
+				</div>
+
+				<!-- 商品详情 -->
+				<div class="serve_more content" style="display:none">
+					<div class="brand">品牌：<a href="javascript:;">安热沙(Anessa)</a></div>
+					<a href="javascript:;"><img src="images/details/serve_heart.png" /><span>关注</span></a>
+					<ul class="clearfix">
+						<li>商品名称：安热沙防晒露</li>
+						<li>商品编号：3568953</li>
+						<li>商品毛重：60.00g</li>
+						<li>商品产地：日本</li>
+						<li>PA值：PA+++</li>
+						<li>分类：防晒啫喱/露</li>
+						<li>功效：防晒</li>
+					</ul>
+					<div class="clearfix"><a class="right more" href="javascript:;">MORE&gt;&gt;</a></div>
+					<div class="brand_power">
+						<img src="images/details/brand_power.jpg" alt="" />
+						<div class="insure">
+							<img src="images/details/insure.jpg" />
+							<div class="insure_more">
+								<a href="javascript:;">点击查看&gt;&gt;</a>
+							</div>
+						</div>
+						<div class="anessa">
+							<div class="head clearfix">
+								<img class="left" src="images/details/ico.png" alt="" />
+								<div class="store left">
+									<h2>安热沙旗舰店</h2>
+									<h3>资生堂旗下防晒品牌</h3>
+								</div>
+							</div>
+							<ul class="clearfix">
+								<li>
+									<div class="img left">
+										<img src="images/details/store_img_1.jpg" />
+									</div>
+									<div class="word left">
+										<h1>遮瑕修颜</h1>
+										<h1>易于涂抹</h1>
+										<h3>美肌防晒修颜乳</h3>
+										<a href="#">点击抢购</a>
+									</div>
+								</li>
+								<li>
+									<div class="img left">
+										<img src="images/details/store_img_2.jpg" />
+									</div>
+									<div class="word left">
+										<h1>温和不刺激</h1>
+										<h1>儿童防晒乳</h1>
+										<h3>呗呵防晒乳50g</h3>
+										<a href="#">点击抢购</a>
+									</div>
+								</li>
+								<li>
+									<div class="img left">
+										<img src="images/details/store_img_3.jpg" />
+									</div>
+									<div class="word left">
+										<h2>持久保湿</h2>
+										<h1>滋润修复</h1>
+										<h3>精华防晒露50g</h3>
+										<a href="#">点击抢购</a>
+									</div>
+								</li>
+								<li>
+									<div class="img left">
+										<img src="images/details/store_img_4.jpg" />
+									</div>
+									<div class="word left">
+										<h1>清爽水润</h1>
+										<h1>提亮肤色</h1>
+										<h3>防晒啫喱水60g</h3>
+										<a href="#">点击抢购</a>
+									</div>
+								</li>
+								<li>
+									<div class="img left">
+										<img src="images/details/store_img_5.jpg" />
+									</div>
+									<div class="word left">
+										<h1>有效防晒</h1>
+										<h1>防水易卸</h1>
+										<h3>金平防晒乳60g</h3>
+										<a href="#">点击抢购</a>
+									</div>
+								</li>
+								<li>
+										<div class="img left">
+											<img src="images/details/store_img_6.jpg" />
+										</div>
+										<div class="word left">
+											<h1>修复防晒乳</h1>
+											<h1>润白肤色</h1>
+											<h3>润白肤色防晒乳</h3>
+											<a href="#">点击抢购</a>
+										</div>
+								</li>
+							</ul>
+						</div>
+						<div class="big_img">
+							<img src="images/details/big_img.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+
+				<!-- 规格参数和商品评价 -->
+				<div class="serve-type content" style="display:none">
+					<table>
+						<thead>
+							<tr><td colspan="2">主体</td></tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>品牌</th>
+								<td>安热沙（ANESSA）</td>
+							</tr>
+							<tr>
+								<th>保质期</th>
+								<td>1825天</td>
+							</tr>
+							<tr>
+								<th>分类</th>
+								<td>防晒啫喱/露</td>
+							</tr>
+							<tr>
+								<th>功效</th>
+								<td>防晒</td>
+							</tr>
+							<tr>
+								<th>适合肤质</th>
+								<td>任何肤质</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="serve-discuss">
+						<h1>商品评价</h1>
+						<div class="business">
+							<div class="clearfix">
+								<div class="rate left">
+									<strong>98<span>%</span></strong><br /><span>好评度</span>
+								</div>
+								<div class="percent left">
+									<dl class="clearfix">
+										<dt>好评（98%）</dt>
+										<dd><div style="width: 98px;"></div></dd>
+									</dl>
+									<dl class="clearfix">
+										<dt>中评（1%）</dt>
+										<dd><div style="width:1px"></div></dd>
+									</dl>
+									<dl class="clearfix">
+										<dt>差评（1%）</dt>
+										<dd><div style="width:1px"></div></dd>
+									</dl>
+								</div>
+								<div class="impress left">
+									<dl class="clearfix">
+										<dt>买家印象</dt>
+										<dd>
+											<i>脸上很舒服（1）</i>
+											<i>补水效果好（1）</i>
+											<i>还可以（1）</i>
+											<i>品牌好（1）</i>
+											<i>挺保湿的（1）</i>
+											<i>价格实惠（1）</i>
+											<i>效果不错（1）</i>
+											<i>很好，可以用（1）</i>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="business-details">
+						<ul class="business-nav clearfix">
+							<li class="nowing">全部评价（10000+）</li>
+							<li>晒图（532）</li>
+							<li>好评（9000+）</li>
+							<li>中评（100+）</li>
+							<li>差评（50+）</li>
+						</ul>
+						<div class="eva-count">
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单当天后评论</p>
+									<p>2015-09-12 13:4</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>刚拿到，还没用，不知道是不是像别人说的是假货</p>
+									<p><img src="images/details/eva-1.jpg" alt="" /><img src="images/details/eva-2.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>徐***豆</p>
+									<p><span>金牌会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单当天后评论</p>
+									<p>2015-09-12 13:00</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>名气很大，用着吧也就那么回事，唯一的好处是用来打底可以防晒，这才是这款产品比较靠谱的功效</p>
+									<p><img src="images/details/eva-3.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>和***尚</p>
+									<p><span>钻石会员</span></p>
+									<p>来自iPhone客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 22:40</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>我不知道真假，我专柜买的和这个的盖的方向不一样，而且明明是买的SPF50，盒子居然贴的是SPF30</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>h***9</p>
+									<p><span>金牌会员</span></p>
+									<p>来自iPhone客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 22:32</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>轻薄易吸收，朋友推荐，好好</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>徐***豆</p>
+									<p><span>金牌会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 21:35</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>喜欢，防晒效果看的见</p>
+									<p><img src="images/details/eva-4.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>K***e</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 21:06</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>不错哦，值得信赖</p>
+									<p><img src="images/details/eva-5.jpg" alt="" /><img src="images/details/eva-6.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>y***8</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:56</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>这款是网上评论最高的，防晒效果最好。生产日期是今年的，只是不知道为什么有的是100多？有的300多？</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>5***霞</p>
+									<p><span>金牌会员</span></p>
+									<p>来自iPhone客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:36</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>特别特别好用，决定以后就用它了，防晒效果很好</p>
+									<p><img src="images/details/eva-8.jpg" alt="" /><img src="images/details/eva-9.jpg" alt="" /><img src="images/details/eva-10.jpg" alt="" /><img src="images/details/eva-11.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>李***0</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:34</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>到青岛才买的，用了感觉还好，反正出去一趟回来还是晒黑可很多</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>j***7</p>
+									<p><span>金牌会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:26</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>很好涂抹，不油，为了在游轮上游泳买的，没晒怎么黑，就是擦多了后来有些过敏。</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>1***6</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="business-navigation clearfix">
+							<ul class="navigation">
+								<li style="display: none">上一页</li>
+								<li class="de-action">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>...</li>
+								<li>下一页</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<!-- 包装清单 -->
+				<div class="serve_bzqd content" style="display:none">
+					<p class="firstp">安热沙（ANESSA）防晒露60ml× 1</p>
+					<div class="bzqd-content">
+						<p class="title-zp">正品行货</p>
+						<p class="txt-sm">京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。</p>
+						<p class="title-qg">全国联保</p>
+						<p class="txt-sm">凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。京东商城还为您提供具有竞争力的商品价格和<a href="#">运费政策</a>，请您放心购买！</p>
+						<p class="txt-sm text-bot"><b>注：</b>因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</p>
+					</div>
+					<div class="sm-cont">
+						<p class="quanli">权利声明：</p>
+						<p class="txt-quanli">京东上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东重要的经营资源，未经许可，禁止非法转载使用。</p>
+						<p class="txt-quanli"><b>注：</b>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+						<p class="quanli">价格说明：</p>
+						<p class="txt-quanli"><b>京东价：</b>京东价为商品的销售价，是您最终决定是否购买商品的依据。</p>
+						<p class="txt-quanli"><b>划线价：</b>商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。</p>
+						<p class="txt-quanli"><b>折扣：</b>如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。</p>
+						<p class="txt-quanli"><b>异常问题 : </b>商品促销信息以商品详情页"促销"栏中的信息为准;商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。</p>
+					</div>
+				</div>
+	 		
+	 			<!-- 商品评价 -->
+				<div class="serve_evaluation content" style="display:none">
+					<div class="serve-discuss">
+						<h1>商品评价</h1>
+						<div class="business">
+							<div class="clearfix">
+								<div class="rate left">
+									<strong>98<span>%</span></strong><br /><span>好评度</span>
+								</div>
+								<div class="percent left">
+									<dl class="clearfix">
+										<dt>好评（98%）</dt>
+										<dd><div style="width: 98px;"></div></dd>
+									</dl>
+									<dl class="clearfix">
+										<dt>中评（1%）</dt>
+										<dd><div style="width:1px"></div></dd>
+									</dl>
+									<dl class="clearfix">
+										<dt>差评（1%）</dt>
+										<dd><div style="width:1px"></div></dd>
+									</dl>
+								</div>
+								<div class="impress left">
+									<dl class="clearfix">
+										<dt>买家印象</dt>
+										<dd>
+											<i>脸上很舒服（1）</i>
+											<i>补水效果好（1）</i>
+											<i>还可以（1）</i>
+											<i>品牌好（1）</i>
+											<i>挺保湿的（1）</i>
+											<i>价格实惠（1）</i>
+											<i>效果不错（1）</i>
+											<i>很好，可以用（1）</i>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="business-details">
+						<ul class="business-nav clearfix">
+							<li class="nowing">全部评价（10000+）</li>
+							<li>晒图（532）</li>
+							<li>好评（9000+）</li>
+							<li>中评（100+）</li>
+							<li>差评（50+）</li>
+						</ul>
+						<div class="eva-count">
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单当天后评论</p>
+									<p>2015-09-12 13:4</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>刚拿到，还没用，不知道是不是像别人说的是假货</p>
+									<p><img src="images/details/eva-1.jpg" alt="" /><img src="images/details/eva-2.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>徐***豆</p>
+									<p><span>金牌会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单当天后评论</p>
+									<p>2015-09-12 13:00</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>名气很大，用着吧也就那么回事，唯一的好处是用来打底可以防晒，这才是这款产品比较靠谱的功效</p>
+									<p><img src="images/details/eva-3.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>和***尚</p>
+									<p><span>钻石会员</span></p>
+									<p>来自iPhone客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 22:40</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>我不知道真假，我专柜买的和这个的盖的方向不一样，而且明明是买的SPF50，盒子居然贴的是SPF30</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>h***9</p>
+									<p><span>金牌会员</span></p>
+									<p>来自iPhone客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 22:32</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>轻薄易吸收，朋友推荐，好好</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>徐***豆</p>
+									<p><span>金牌会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 21:35</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>喜欢，防晒效果看的见</p>
+									<p><img src="images/details/eva-4.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>K***e</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 21:06</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>不错哦，值得信赖</p>
+									<p><img src="images/details/eva-5.jpg" alt="" /><img src="images/details/eva-6.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>y***8</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:56</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>这款是网上评论最高的，防晒效果最好。生产日期是今年的，只是不知道为什么有的是100多？有的300多？</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>5***霞</p>
+									<p><span>金牌会员</span></p>
+									<p>来自iPhone客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:36</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>特别特别好用，决定以后就用它了，防晒效果很好</p>
+									<p><img src="images/details/eva-8.jpg" alt="" /><img src="images/details/eva-9.jpg" alt="" /><img src="images/details/eva-10.jpg" alt="" /><img src="images/details/eva-11.jpg" alt="" /></p>
+								</dd>
+								<dd class="business-name">
+									<p>李***0</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:34</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>到青岛才买的，用了感觉还好，反正出去一趟回来还是晒黑可很多</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>j***7</p>
+									<p><span>金牌会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dd class="date">
+									<p class="iconfont">&#xe732;&#xe732;&#xe732;&#xe732;&#xe732;</p>
+									<p>下单一天后评论</p>
+									<p>2015-09-11 20:26</p>
+									<p>防晒露60ml</p>
+								</dd>
+								<dd class="business-content">
+									<p>很好涂抹，不油，为了在游轮上游泳买的，没晒怎么黑，就是擦多了后来有些过敏。</p>
+									<p></p>
+								</dd>
+								<dd class="business-name">
+									<p>1***6</p>
+									<p><span>钻石会员</span></p>
+									<p>来自Android客户端</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="business-navigation clearfix">
+							<ul class="navigation">
+								<li style="display: none">上一页</li>
+								<li class="de-action">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>...</li>
+								<li>下一页</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 售后保障 -->
+	 			<div class="serve_bzqd content" style="display:none">
+		 			<div class="bz-shuoming">
+							<p class="txt-quanli">1、化妆品及个人护理用品，因使用后造成商品不完好的，不适用七天无理由退货；如确属商品质量问题的，可办理退货，但申请退货时商品已过期或离过期不到3个月的情况除外(活动及清仓 商品除外，例如：因商品保质期将到和外包装有损包括在内的所有活动清仓商品，我司在活动中已明确说明的，不予退换货。请顾客对此类商品谨慎购买!)，因个人喜好(气味，色泽、型号， 外观)和个人肤质不同要求的退货除外；</p>	
+							<p class="txt-quanli">2、购买化妆品请当场验收，若商品有破损，渗漏，缺少，配送有误等问题，请当即与京东客服人员联系；</p>	
+							<p class="txt-quanli">3、我们保证商品的进货渠道和质量，如果客户在使用时对商品质量表示置疑，请出具书面鉴定，我们会按照国家法律规定予以处理。</p>
+							<p class="txt-quanli">4、如遇过敏问题产生退货需要提供正规医院的相关证明。</p>
+		 			</div>
+						<div class="bzqd-content">
+							<p class="title-zp">正品行货</p>
+							<p class="txt-sm">京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。</p>
+							<p class="title-qg">全国联保</p>
+							<p class="txt-sm">凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。京东商城还为您提供具有竞争力的商品价格和<a href="#">运费政策</a>，请您放心购买！</p>
+							<p class="txt-sm text-bot"><b>注：</b>因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</p>
+						</div>
+						<div class="sm-cont">
+							<p class="quanli">权利声明：</p>
+							<p class="txt-quanli">京东上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东重要的经营资源，未经许可，禁止非法转载使用。</p>
+							<p class="txt-quanli"><b>注：</b>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+							<p class="quanli">价格说明：</p>
+							<p class="txt-quanli"><b>京东价：</b>京东价为商品的销售价，是您最终决定是否购买商品的依据。</p>
+							<p class="txt-quanli"><b>划线价：</b>商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。</p>
+							<p class="txt-quanli"><b>折扣：</b>如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。</p>
+							<p class="txt-quanli"><b>异常问题 : </b>商品促销信息以商品详情页"促销"栏中的信息为准;商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。</p>
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="ensure">
+		<div class="box">
+			<div class="ensure_1">
+				<img src="images/details/ensure_1.jpg" alt="" />
+				<span>正品行货</span>
+			</div>
+			<div class="word">
+				该商城向您保证所售商品均为正品行货，自营业以来开具机打发票或电子发票。
+			</div>
+			<div class="ensure_2">
+				<img src="images/details/ensure_2.jpg" alt="" />
+				<span>全国联保</span>
+			</div>
+			<div class="word">
+				<p>凭质保证书及本商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由该商城联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。该商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买
+				</p>
+				<p>注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+				</p>
+			</div>
+		</div>
+	</div>
+
+<!--  Footer Start  -->
+<div class="footer">
+		<div class="bottom_one">
+			<div class="centerBox clr">
+				<a href="#"><img src="images/footer/bottom01.jpg" alt=""></a>
+				<a href="#"><img src="images/footer/bottom02.png" alt=""></a>
+				<a href="#"><img src="images/footer/bottom03.png" alt=""></a>
+				<a href="#"><img src="images/footer/bottom04.png" alt=""></a>
+			</div>
+		</div>
+		<div class="bottom_two centerBox clr">
+			<div class="bottom_two_ct">
+				<h2>购物指南</h2>
+				<p><a href="#">购物流程</a></p>
+				<p><a href="#">会员介绍</a></p>
+				<p><a href="#">生活旅行团购</a></p>
+				<p><a href="#">常见问题</a></p>
+				<p><a href="#">大家电</a></p>
+				<p><a href="#">联系客服</a></p>
+			</div>
+			<div class="bottom_two_ct">
+				<h2>配送方式</h2>
+				<p><a href="#">上门自提</a></p>
+				<p><a href="#">211限时达</a></p>
+				<p><a href="#">配送服务查询</a></p>
+				<p><a href="#">配送费收取标准</a></p>
+				<p><a href="#">海外配送</a></p>
+			</div>
+			<div class="bottom_two_ct">
+				<h2>支付方式</h2>
+				<p><a href="#">到货付款</a></p>
+				<p><a href="#">在线支付</a></p>
+				<p><a href="#">分期付款</a></p>
+				<p><a href="#">常见问题</a></p>
+				<p><a href="#">邮局汇款</a></p>
+				<p><a href="#">公司转账</a></p>
+			</div>
+			<div class="bottom_two_ct">
+				<h2>售后服务</h2>
+				<p><a href="#">售后政策</a></p>
+				<p><a href="#">价格保护</a></p>
+				<p><a href="#">退款说明</a></p>
+				<p><a href="#">返修/退换货</a></p>
+				<p><a href="#">取消订单</a></p>
+			</div>
+			<div class="bottom_two_ct bottom_two_ctLast">
+				<h2>特色服务</h2>
+				<p><a href="#">夺宝岛</a></p>
+				<p><a href="#">DIY装机</a></p>
+				<p><a href="#">延保服务</a></p>
+				<p><a href="#">COUUOA卡</a></p>
+				<p><a href="#">COUUO通信</a></p>
+				<p><a href="#">COUUOX+</a></p>
+			</div>
+			<div class="bottom_two_ct bottom_two_ctBox">
+				<h2>特色服务</h2>
+				<p><a href="#">COUUO已向全国2630各区县提供 自营配送服务，支持货到付款 、  POS机刷卡和售后上门服务。</a></p>
+				<p class="r"><a href="#">查看详情 ></a></p>
+			</div>
+		</div>
+		<div class="bottom_three centerBox">
+			<div class="bottom_threeOne">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">商家入驻</a>
+				<span>|</span>
+				<a href="#">营销中心</a>
+				<span>|</span>
+				<a href="#">手机独角戏</a>
+				<span>|</span>
+				<a href="#">友情链接</a>
+				<span>|</span>
+				<a href="#">销售联盟</a>
+				<span>|</span>
+				<a href="#">COUUO社区</a>
+				<span>|</span>
+				<a href="#">COUUO公益</a>
+				<span>|</span>
+				<a href="#">Englisth Site</a>
+				<span>|</span>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="bottom_threeOne bottom_threeTwo">
+				<a href="#" class="beian">京公网安备 11000002000088号</a>
+				<span>|</span>
+				<a href="#">京ICP证070359号</a>
+				<span>|</span>
+				<a href="#">互联网药品信息服务资格证编号（京）-经营性-2014-0008</a>
+				<span>|</span>
+				<a href="#">新出发京零 字第大120007号</a>
+			</div>
+			<div class="bottom_threeOne bottom_threeTwo">
+				<a href="#">互联网出版许可证编号新出网证(京)字150号</a>
+				<span>|</span>
+				<a href="#">出版物经营许可证</a>
+				<span>|</span>
+				<a href="#">网络文化经营许可证京网文[2014]2148-348号</a>
+				<span>|</span>
+				<a href="#">违法和不良信息举报电话：4006561155</a>
+			</div>
+			<div class="bottom_threeOne bottom_threeTwo">
+				<a href="#">Copyright © 2004 - 2016  京东JD.com 版权所有</a>
+				<span>|</span>
+				<a href="#">消费者维权热线：4006067733</a>
+			</div>
+			<div class="bottom_threeOne bottom_threeTwo">
+				<a href="#">COUUO旗下网站：COUUO钱包</a>
+			</div>
+		</div>
+		<div class="bottom_four centerBox">
+			<ul class="clr">
+				<li>
+					<img src="images/footer/buttom06.png" alt="">
+				</li>
+				<li>
+					<img src="images/footer/buttom07.png" alt="">
+				</li>
+				<li>
+					<img src="images/footer/buttom08.png" alt="">
+				</li>
+				<li>
+					<img src="images/footer/buttom09.png" alt="">
+				</li>
+				<li>
+					<img src="images/footer/buttom10.png" alt="">
+				</li>
+				<li>
+					<img src="images/footer/buttom11.png" alt="">
+				</li>
+			</ul>
+		</div>
+</div>
+<!--  Footer End  -->
+
+</body>
+</html>

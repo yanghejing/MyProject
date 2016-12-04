@@ -1,0 +1,623 @@
+
+.flashsales img{
+	border-style: none;
+}
+.flashsales li{
+	list-style: none;
+}
+.flashsales body{
+	font-family: "Microsoft Yahei";
+}
+.flashsales ul li{
+	list-style: none;
+}
+.flashsales a{
+	text-decoration: none;
+}
+.flashsales .left{
+	float: left;
+}
+.flashsales .right{
+	float: right;
+}
+.flashsales .clearfix{
+	zoom:1;
+}
+.flashsales .clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.flashsales .main{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+.flashsales .oul li{
+	float: left;
+	padding: 0 5px;
+}
+.flashsales .oul li a{
+   color: #666666;
+   font-size: 12px;
+}
+.flashsales .oul li a:hover{
+	color: #fa7445;
+}
+.flashsales .nav{
+	height: 40px;
+	background-color: #fa7445;
+}
+.flashsales .navul{
+	padding-left: 8px;
+}
+.flashsales .navul li{
+	float: left;
+	line-height: 40px;
+	padding: 0 15px 0 20px;
+	margin-left: 12px;	
+}
+.flashsales .navul li:hover{
+	background-color: #ff4200;
+}
+.flashsales .navul li a{
+	color: #fff;
+	font-size: 16px;
+}
+.flashsales .banner{
+	height: 420px;
+	/*background-image: url(../images/banner.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;*/
+}
+.flashsales .banner img{
+	width: 100%;
+	height:420px;
+}
+.flashsales .mainbox{
+	/*height: 4070px;*/
+	background-color: #f4f4f4;
+}
+.flashsales .pinpai{
+	height: 700px;
+}
+.flashsales .brand{
+	height: 90px;
+}
+.flashsales .brand span{
+	margin-top: 33px;
+}
+.flashsales .brandspan{
+	color: #1e1e1e;
+	font-size: 20px;
+	float: left;
+	margin-left: 15px;
+	position: relative;
+}
+.flashsales .timespan{
+	color: #adadad;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-left: 40px;
+}
+.flashsales span.hx{
+	position: relative;
+    top: 28px;
+    left: 30px; l
+}
+.flashsales .brandspan:before{
+	content: "";
+	border-left:2px solid #ff632d;
+	position: absolute;
+	height: 40px;
+	left:-10px;
+	top:15%;
+	margin-top:-16px;
+}
+.flashsales span.top{
+	float: right;
+	display: inline-block;
+	position: relative;
+             right: 145px;
+             width: 149px;
+	height: 55px;
+	line-height: 53px;
+	text-align: center;
+	background-color: #f7f7f7;
+	border: 1px solid #ededed;
+}
+.flashsales span.top:hover{
+	background-color: #fb6b39;
+	cursor: pointer;
+}
+.flashsales span.top {
+	color:#747474;
+	font-size: 14px;
+	display: block;
+	 width: 149px;
+	height: 55px;
+}
+.flashsales span.top:hover{
+	color: #fff;
+}
+/*.flashsales span.tuijian{
+	background-color: #fb6b39;
+
+}
+.flashsales span.tuijian a{
+	color: #fff;
+}*/
+.flashsales .brandlg{
+	height: 570px;
+}
+.flashsales .brandbox{
+	width: 700px;
+	height: 570px;
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+.flashsales .tuijianbox{
+	float: right;
+	width: 300px;
+	height: 570px;
+    margin-right: 146px;
+	background-color:#fff;
+	display: none;
+}
+.flashsales .tuijianboxshow{
+	display: block;
+}
+
+.flashsales .tebulogo{
+		float: left;
+		width: 706px;
+		height: 180px;
+		margin-bottom: 10px;
+		background-color: #fff;
+}
+.flashsales h3{
+	font-size: 16px;
+    color: #3f3f3f;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.flashsales h4{
+	color: #da251e;
+	font-size: 14px;
+	font-weight: normal;
+    margin-left: 40px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.flashsales h5 a{
+		color: #b3b3b3;
+		 margin-left: 55px;
+		font-weight: normal;
+}
+.flashsales p.casio img{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.flashsales p.gucci img{
+	margin-left: 35px;
+}
+.flashsales .tebulogo p.tebu{
+	margin-left: 25px;
+	margin-top: 10px;
+}
+.flashsales .tebulogo p.linep{
+	margin-left: 50px;
+	margin-top: -10px;
+}
+.flashsales .tebuimg{
+	float: left;
+}
+.flashsales .tebul{
+	width: 235px;
+    float: left;
+}
+.flashsales .lg1{
+	width: 260px;
+    height: 100px;
+    margin: 25px 0 0 20px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+.flashsales .lg2{
+	margin-top: 5px;
+}
+ .flashsales ul.lg1 a{
+ 	display: block;
+ }
+.flashsales .lg1-line{
+	position: absolute;
+	top: 18px;
+	left: 144px;
+}
+.flashsales .luosu img{
+	margin: 20px 0 0 15px;
+}
+.flashsales .qipai img{
+	margin: 20px 25px 0 0;
+}
+.flashsales .dafuni img{
+	margin: 12px 0 0 5px;
+}
+.flashsales .anta img{
+	margin: 20px 5px 0 0;
+}
+.flashsales .adi img{
+	margin: 25px 0 0 22px;
+}
+.flashsales .lv img{
+	margin: 8px 6px 0 0;
+}
+.puma img{
+	margin: 8px 0 0 20px;
+}
+.flashsales .dcr img{
+	margin:0;
+}
+.flashsales .ln img{
+	margin: 35px 0 0 22px;
+}
+.flashsales .Jon img{
+	margin: 15px 5px 0 0;
+}
+.flashsales .today{
+	height: 1320px;
+}
+.flashsales .tul{
+	float: left;
+	margin-top: 30px;
+	margin-left: 70px;
+}
+.flashsales .tul li{
+	float: left;
+	line-height: 35px;
+	text-align: center;
+	
+	
+}
+
+.flashsales .tul li a{
+	color: #5f5f5f;
+	font-size: 16px;
+	display: block;
+	width: 40px;
+	padding: 0 2px;
+}
+.flashsales .tul li .ahover{
+	color: #fff;
+	background-color: #ff884d;
+	cursor: pointer;
+}
+.flashsales .tul li .ahover1{
+	color: #fff;
+	background-color: #ff884d;
+	cursor: pointer;
+}
+.flashsales .close{
+	height: 402px;
+}
+.flashsales .tabchange{
+	height: 1226px;
+	width: 1200px;
+	display: none;
+}
+.flashsales .tabchangeshow{
+	display: block;
+}
+.flashsales .onerow {
+	margin-top: 30px;
+}
+.flashsales .onerow .show img{
+	width: 240px;
+	height: 240px;
+}
+.flashsales .onef{
+	float: left;
+	height: 400px;
+	width: 280px;
+	border: 1px solid #e5e5e5;
+	/*margin-top: 30px;*/
+	margin-left: 20px;
+	background-color: #fff;
+}
+.flashsales .onef a{
+	position: relative;
+    top: 10px;
+    left: 20px;
+}
+.flashsales p.spantxt {
+	width: 245px;
+}
+.flashsales p.spantxt a{
+	font-size: 12px;
+	color: #3c3c3c;
+	letter-spacing: 0.5px;
+}
+.flashsales p.spantxt a:hover{
+             color: #ff884d;
+}
+.flashsales .rmb{
+	width: 245px;
+	margin-left: 18px;
+	margin-top: 12px;
+}
+.flashsales span._rmb{
+	float: left;
+	font-size: 16px;
+	color: #606060;
+	margin-top: 14px;
+}
+.flashsales span.price {
+	float: left;
+	color:#ff3838;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.flashsales span.tprice{
+	font-size: 14px;
+    color: #676767;
+    text-decoration: line-through;
+    position: relative;
+    top: 13px;
+    left: 15px;
+}
+.flashsales span.buy {
+	display: block;
+    width: 90px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #ff884d;
+    position: relative;
+    float: right;
+    top: 10px;
+}
+.flashsales span.buy a{
+	color: #fff;
+    line-height: 33px;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+}
+.flashsales .twof{
+	margin-left: 10px;
+}
+.flashsales .tworow{
+	margin-top: 10px;
+}
+.flashsales .bottom{
+	width:280px;
+	height: 45px;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 18px;
+}
+.flashsales span.sale{
+	font-size: 14px;
+    margin-left: 20px;
+    line-height: 45px;
+}
+.flashsales span.zan{
+	float: right;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+.flashsales div.tomorrow{
+	height: 800px;
+}
+.flashsales .tmw{
+	height: 40px;
+	margin-top: 90px;
+}
+.flashsales .tmwlogo{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.flashsales .trow {
+	margin-top: 28px;
+}
+.flashsales .sancai{
+	float: left;
+	width: 535px;
+	height: 200px;
+	background-color: #fff;
+}
+.flashsales span.scimg{
+	display: block;
+    	float: left;
+}
+.flashsales span.scimg img{
+	margin-top: 18px;
+    margin-left: 20px;
+}
+.flashsales div.scright{
+	float:right;
+	margin: 25px 25px 0 0;
+}
+.flashsales .mater{
+	float: left;
+	margin: 0 40px;
+	background-color: #071039;
+}
+.flashsales .yuzhaolin{
+	background-color: #fff;
+}
+.flashsales .tmw span.timespan{
+	margin-top: 4px;
+}
+.flashsales .tmw span.hx{
+	top: -2px;
+}
+.flashsales p.op a{
+	font-size: 20px;
+	color: #1e1e1e;
+}
+.flashsales p.tp{
+	width: 150px;
+	height: 2px;
+	margin-top: 10px;
+	background-color: #060606;
+}
+.flashsales p.thp a{
+	font-size: 12px;
+	color: #1e1e1e;
+	margin-top: 5px;
+}
+.flashsales p.fp{
+	width: 190px;
+	height: 20px;
+	margin-top: 25px;
+	background-color: #7a7a7a;
+}
+.flashsales p.fp a{
+	color: #fff;
+	margin-left: 10px;
+}
+.flashsales .metersbonwe p.op a{
+	color: #fefefe;
+}
+.flashsales .metersbonwe p.op a span{
+	color: #ff8c10;
+}
+.flashsales .metersbonwe p.thp a{
+	color: #fff;
+}
+.flashsales .metersbonwe p.tp{
+	background-color: #fff;
+}
+.flashsales .zhenws{
+	background-color: #0b1761;
+}
+.flashsales .zhenws p a{
+	color: #fff;
+}
+.flashsales .dingdang{
+	height: 805px;
+	margin-left: 20px;
+}
+.flashsales .fistD{
+	height:396px; 
+	width: 385px;
+	margin-right: 5px;
+	float: left;
+}
+.flashsales .fistD a{
+	display: block;
+	height: 268px;
+}
+.flashsales .centerD{
+	height: 68px;
+	background-color: #fff;
+}
+.flashsales .centerD h4{
+	font-size: 16px;
+	color:#222222;
+	margin: 0;
+	padding-top: 15px;
+    padding-left: 12px;
+}
+.flashsales .centerD span{
+	font-size: 12px;
+	color: #f73f66;
+
+}
+.flashsales .centerD span img{
+	margin-right: 5px;
+    padding-left: 12px;
+}
+.flashsales .footD{
+	height: 60px;
+	background-image: url("../images/flashsales/flashsales-gif22_03.gif");
+	background-repeat: no-repeat;
+}
+.flashsales .footD h3{
+	float: left;
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.flashsales .footD h5{
+	font-weight: normal;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.flashsales .footD span{
+	display: block;
+    width: 86px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    margin-top: 35px;
+    margin-left: -40px;
+
+}
+.flashsales .footD h2{
+	font-weight: normal;
+	float: right;
+    font-size: 18px;
+    line-height: 60px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.flashsales .footD h2 a{
+	color: #f61d4b;
+}
+.flashsales .onedingd{
+	height: 395px;
+}
+.flashsales .twodingd{
+	height: 395px;
+	margin-top: 15px;
+}
+.flashsales .more{
+	height: 260px;
+	margin-bottom: 40px;
+}
+.flashsales .more p{
+	width: 315px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #fff;
+    margin: 45px auto;
+}
+.flashsales .more p a{
+	color: #646464;
+	font-size: 18px;
+}
+
+
+.flashsales .fiexd{
+	position: fixed;
+	bottom:201px;
+	right:0px;
+}
+.flashsales .fiexd a{
+	display: block;
+	width:44px;
+	height:44px;
+	background-color: #949191;
+	line-height: 44px;
+	text-align: center;
+	font-size: 26px;
+	color:#fff;
+}

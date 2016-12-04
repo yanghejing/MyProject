@@ -1,0 +1,492 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑"
+}
+a{
+	text-decoration: none;
+	
+}
+li{
+	list-style-type: none;
+}
+img{
+	border: 0;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0; 
+}
+.center{
+	margin:0 auto;
+	width: 1200px;
+}
+/************************************/
+/************************************/
+/************************************/
+.auction-nav .classify{
+	position: relative;
+	float: left;
+}
+
+.auction-nav .classify div{
+	width: 200px;
+	background-color: #ff632d;
+}
+.auction-nav .classify div h4{
+	float: left;
+	width: 100px;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	text-indent: 18px;
+	font-size: 18px;
+	font-weight: normal;
+}
+.auction-nav .classify>ul{
+	position: absolute;
+	top: 55px;
+	left: 0;
+	background-color: #fff;
+	font-size: 0;
+	display: none;
+}
+.auction-nav .classify:hover>ul{
+	display: block;
+}
+.auction-nav .classify>ul>li{
+	position: relative;
+}
+.auction-nav .classify>ul>li>a{
+	display: block;
+	width: 200px;
+	height: 39px;
+	line-height: 39px;
+	color: #666;
+	text-indent: 18px;
+}
+.auction-nav .classify>ul>li>a>h4{
+	float: left;
+	font-size: 16px;
+	width: 150px;
+	line-height: 39px;
+	font-weight: normal;
+	border: none;
+}
+.auction-nav .classify b{
+	float: right;
+	color: #333;
+	height: 39px;
+	line-height: 39px;
+	font-size: 14px;
+	width: 20px;
+	text-align: center;
+	text-indent: 0;
+	margin-right: 10px;
+	font-weight: normal;
+}
+.auction-nav .classify div b{
+	float: right;
+	width: 20px;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-indent: 0;
+	margin-right: 10px;
+	font-weight: normal;
+}
+.auction-nav .classify>ul>li>a:hover{
+	background-color: #ff632d;
+	color: #fff;
+}
+.auction-nav .classify>ul>li>a:hover b{
+	color: #fff;
+}
+/*真品分类的三级导航*/
+.auction-nav .classify>ul>li>ul{
+	width: 240px;
+	overflow: hidden;
+	position: absolute;
+	left: 200px;
+	top: 0;
+	padding-top: 5px;
+	box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.3);
+	background-color: #fff;
+	display: none;
+}
+.auction-nav .classify>ul>li:hover>ul{
+	display: block;
+}
+.auction-nav .classify>ul>li>ul>li{
+	width: 120px;
+	height: 30px;
+	float: left;
+}
+.auction-nav .classify>ul>li>ul>li>a{
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+	padding: 0 10px;
+}
+.auction-nav .classify>ul>li>ul>li>a:hover{
+	color: #f00;
+}
+/**/
+.auction-nav .headernav li{
+	float: left;
+	margin-left: 8px;
+}
+.auction-nav .headernav li a{
+	display: block;
+	height: 55px;
+	line-height: 55px;
+	padding: 0 30px;
+	font-size: 18px;
+	color: #000;
+	-webkit-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+}
+.auction-nav .headernav li a:hover{
+	background-color: #ff632d;
+	color: #fff;
+}
+/*****.auction-banner轮播没有图********************/
+.auction-banner{
+	width: 100%;
+	overflow: hidden;
+}
+.auction-banner  img{
+	width: 100%;
+}
+/*****.auction-today今日专场*********************/
+.auction-today{
+	background-color: #eee;
+}
+.auction-today .font{
+	height: 73px;
+}
+.auction-today .font p{
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 30px;
+	padding-top: 43px;
+	height: 30px;
+	padding-left: 5px;
+}
+.auction-today .imgbox ul{
+	background-color: #f1f1f1;
+}
+.auction-today .imgbox ul li{
+	width: 396px;
+	height: 364px;
+	background-color: white;
+	float: left;
+	margin-right: 6px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	position: relative;
+}
+.auction-today .imgbox ul li .picture{
+	width: 395px;
+	height: 216px;
+	overflow: hidden;
+}
+.auction-today .imgbox ul li .picture img{
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+}
+.auction-today .imgbox ul li .picture:hover img{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2)  state(30deg);
+}
+.auction-today .imgbox ul li.li3,.auction-today .imgbox ul li.li6{
+	margin-right: 0;
+}
+.auction-today .imgbox ul li .price .times{
+	padding-top: 3px;
+	padding-left: 2px;
+}
+.auction-today .imgbox ul li .price .times a{
+	display: block;
+	width: 144px;
+	height: 37px;
+	font-size: 16px;
+	background-color: #ff632d;
+	line-height: 37px;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+.auction-today .imgbox ul li .price .times a span{
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -15px;
+	border-top: 10px solid  #ff632d;
+	border-bottom: 10px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+.auction-today .imgbox ul li .long{
+	position: absolute;
+	right: 10px;
+	bottom: 10
+
+	5px;
+	font-size: 12px;
+	color: #666666;
+}
+.auction-today .imgbox ul li .infor{
+	padding-top: 20px;
+}
+.auction-today .imgbox ul li .infor p{
+	width: 230px;
+	text-align: center;
+	margin-top: 5px;
+}
+.auction-today .imgbox ul li .infor p.p1{
+	font-size: 14px;
+}
+.auction-today .imgbox ul li .infor p.p2 a{
+	font-size: 12px;
+	color: #666666;
+}
+.auction-today .imgbox ul li .more a{
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	width: 120px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background-color: #f1f1f1;
+	color: #333333;
+	font-size: 12px;
+}
+/*******.auction-popularity人气拍品******************/
+.auction-popularity{
+	padding: 10px;
+}
+.auction-little-public{
+	font-size: 24px;
+	padding-top:15px;
+	padding-bottom: 15px;  
+}
+.auction-popularity .popularity-box{
+	width: 280px;
+	float: left;
+	margin-right: 20px;
+	height: 310px;
+	padding-bottom: 10px;
+}
+.auction-popularity .popularity-box:hover{
+	outline: 3px solid #ff6633;
+}
+.auction-popularity .popularity-box a{
+	display: block;
+}
+.auction-popularity .popularity-box .popularity-images{
+	text-align: center;
+	overflow: hidden;
+	height: 174px;
+	width: 280px;
+}
+.auction-popularity .popularity-box .bg{
+	height: 150px;
+}
+.auction-popularity .popularity-box .popularity-images img{
+	-webkit-transition:all .3s;
+	-o-transition:all .3s;
+	transition: all .3s;
+}
+.auction-popularity .popularity-box:hover .popularity-images img{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.auction-popularity .popularity-box .bid{
+	display:inline-block;
+    *zoom:1;
+	*display: inline;
+	margin-top: 10px;
+	width: 136px;
+	height: 30px;
+	background-color: #ff6633;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+}
+.auction-popularity .popularity-box .bid a{
+	color: #fff;
+}
+.auction-popularity .popularity-box .bid:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-top: 7px solid #ff6633;
+	position: absolute;
+    left:65px;
+    top: 30px;
+}
+.auction-popularity .popularity-box .time-ico{
+	vertical-align: middle;
+}
+.auction-popularity .popularity-box .auction-public-timecount{
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+}
+.auction-popularity .popularity-box .depict{
+	margin-top: 17px;
+	text-indent: 40px;
+}
+.auction-popularity .popularity-box .depict a{
+	color: #000;
+	font-size: 14px;
+}
+.auction-popularity .popularity-box .depict-bid{
+	font-size: 14px;
+	text-indent: 40px;
+}
+.auction-popularity .popularity-box .depict-sale{
+	float: left;
+	width: 140px;
+	display: block;
+	padding-top: 5px;
+	font-size: 14px;
+	color: #ff6633;
+	text-indent: 40px;
+}
+.auction-popularity .popularity-box .depict-yes{
+	display: block;
+	float: right;
+	width: 120px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	background: #f1f1f1;
+	margin-right: 10px;
+}
+.auction-popularity .popularity-box .depict-yes a{
+	font-size: 14px; 
+	color: #333333;
+}
+.auction-popularity .popularity-box .depict-yes:hover a{
+	color: #fff;
+	background: #ff6633;
+}
+.auction-popularity .cl{
+	padding-top: 30px;
+}
+
+/*******auction-extravagant奢侈品*****************/
+
+.auction-extravagant .extravagantshow{
+	padding-top: 15px;
+	float: left;
+	height: 218px;
+}
+.auction-extravagant .extravagantshow .imgbox{
+	float: left;
+	overflow: hidden;
+}
+.auction-extravagant .extravagantshow .imgbox img{
+	-webkit-transition:all .3s;
+	-o-transition:all .3s;
+	transition: all .3s;
+}
+.auction-extravagant .extravagantshow .imgbox a{
+	display: block;
+}
+.auction-extravagant .extravagantshow .imgbox:hover img{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1) state(30deg);
+}
+.auction-extravagant .extravagantshow .tips{
+	padding-left: 20px;
+	width: 203px;
+	float: left;
+}
+.auction-extravagant .extravagantshow .tips .onlookers{
+	display: block;
+	width: 160px;
+	background-color: #ff6633;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+.auction-extravagant .extravagantshow .tips .onlookers:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-top: 7px solid #ff6633;
+	position: absolute;
+            left:80px;
+            top: 30px;
+}
+.auction-extravagant .extravagantshow .tips .onlookers a{
+	color: #fff;
+}
+.auction-extravagant .tips .onlookers-headline{
+	width: 160px;
+	text-align: center;
+	margin-top: 15px;
+}
+.auction-extravagant .tips .onlookers-headline a{
+	color: #333333;
+}
+.auction-extravagant .tips .onlookers-title{
+	font-size: 12px;
+	width: 140px;
+	text-align: center;
+	margin-top: 5px;
+	color:#666666;
+}
+.auction-extravagant .tips .extravagant-photo{
+	padding-top: 40px;
+	padding-left: 10px; 
+	font-size: 14px;
+	color: #666666; 	
+}
+.auction-extravagant .tips .extravagant-photo img{
+	vertical-align: top;
+}
+/********************************/
+/*    模块尾部的加载更多标签    */
+/********************************/
+.auction-more{
+	width: 100%;
+	text-align: center;
+}
+.auction-more button{
+	/*width: 100px;*/
+	height: 40px;
+	font-size: 18px;
+	border: none;
+	background-color: #ff6633;
+	color: #fff;
+	margin: 10px auto;
+	padding: 0 20px;
+}

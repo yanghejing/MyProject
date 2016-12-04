@@ -1,0 +1,80 @@
+/*   footer */
+.footer{
+	padding-bottom: 30px;
+}
+.footer .bottom_one{
+	background: #f5f5f5;
+}
+.footer .bottom_one div a{
+	float: left;
+	margin:0 45px 0 20px;
+}
+.footer .bottom_two{
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0;
+}
+.footer .bottom_two_ct{
+	float: left;
+	width: 120px;
+	margin-right: 80px;
+}
+.footer .bottom_two_ct h2{
+	color: #666666;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 2em;
+	padding-left: 10px;
+}
+.footer .bottom_two_ct p {
+	padding-left: 10px;
+}
+.footer .bottom_two_ct p a{
+	color: #666;
+	font-size: 12px;
+	line-height: 2em;
+}
+.footer .bottom_two_ctLast{
+	margin-right:10px;
+}
+.footer .bottom_two_ctBox{
+	float: left;
+	width: 200px;
+	height: 185px;
+	padding-left: 30px;
+	margin-right: 0;
+	background: url(../images/footer/map.gif) no-repeat 0 0 ;
+}
+.footer .bottom_two_ctBox p.r{
+	text-align:right;
+}
+.footer .bottom_threeOne{
+	text-align: center;
+	margin: 20px 0;
+}
+.footer .bottom_threeOne a,.bottom_threeOne span{
+	font-size: 12px;
+	color: #666;
+}
+.footer .bottom_threeTwo{
+	margin: 0;
+}
+.footer a.beian{
+	display: inline-block;
+	*display: inline;
+	*clear: both;
+	height: 20px;
+	line-height: 22px;
+	padding-left: 22px;
+	background: url(../images/footer/buttom05.jpg) no-repeat;
+}
+.footer .bottom_four{
+	margin-top: 30px;
+}
+.footer .bottom_four ul{
+	text-align: center;
+	margin-left: 210px;
+}
+.footer .bottom_four ul li{
+	float: left;
+	margin: 0 15px;
+}

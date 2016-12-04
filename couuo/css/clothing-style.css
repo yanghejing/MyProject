@@ -1,0 +1,687 @@
+body{
+	font-family:"microsoft yahei";
+	font-size:16px;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clearfix:after{
+	content:"";
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+}
+.clearfix{
+	zoom:1;
+}
+.wrapper{
+	width:1200px;
+	margin:0 auto;
+}
+a{
+	text-decoration:none;
+}
+ul li {
+	list-style-type: none;
+}
+
+
+
+/**********************************************************
+ ****************************服装banner轮播图******************
+ **********************************************************/
+.clothing-banner-img{
+	border-top:2px solid #FF6400;
+	width:100%;
+	height:473px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+#slider-wrap {
+	width:100%;
+	height:473px;
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left:-960px;
+}/*可以修改宽高*/
+#slider {
+	position: relative;
+	width:100%;
+	height:473px;
+	background: #FFF;
+	overflow: hidden;
+}/*可以修改宽高*/
+#slider img {
+	position: absolute;
+	top:0;
+	left:0;
+	/*display:none;*/
+	width:1920px;
+	height:473px;
+}/*可以修改宽高*/
+.nivoSlider a.nivo-imageLink {
+	position: absolute;
+	top: 0px;
+	display: block;
+	left: 0px;
+	width: 100%;
+	height: 473px;
+	z-index: 6;
+}/*可以修改宽高*/
+.nivo-slice {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+}
+.nivo-box {
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+.nivo-caption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	width:100%;
+	z-index: 30;
+	height: 40px;
+}/*可以修改宽高*/
+.nivo-caption p {
+	width:100%;
+	height: 40px;
+	text-indent: -9999px
+}/*可以修改宽高*/
+.nivo-controlNav {
+	position: absolute;/*改变小按钮的位置*/
+	left: 45%;
+	bottom: 5px;
+	z-index:50;
+}/*可以修改左右上下间距*/
+.nivo-controlNav a {
+	position: relative;
+	z-index:60;
+	cursor: pointer;
+	background: #074d91
+}
+.nivo-controlNav a.active {
+	background: #ff6400;
+	font-weight: bold;
+}
+.nivo-controlNav a {/*小按钮的大小*/
+	display: block;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius:15px;
+	line-height: 30px;
+	text-align: center;
+	margin-right: 3px;
+	float: left;
+	overflow: hidden;
+}/*可以修改宽高*/
+.nivo-directionNav a {
+	position: absolute;
+	top: 45%;
+	z-index: 9;
+	cursor: pointer;
+}
+/*左右切换按钮，不能删除，如果不需要可以设背景，删除会引起图片错位*/
+.nivo-directionNav a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height:50px;
+	text-align:center;
+	/*background-color:rgba(0,255,0,.3);*/
+	/*text-indent: -9999px;*//*不显示两个按钮的作用*/
+	border:0;
+	font-size:60px;
+	color:#FFFFFF;
+}
+a.nivo-nextNav {
+	right:10px;
+}
+a.nivo-prevNav {
+	left: 10px;
+}
+/**********************************************************
+ ****************************导航栏***********************
+ ***********************************************************/
+.clothing-banner-nav{
+	position:relative;
+	z-index: 150;
+}
+.clothing-banner-nav nav ul {
+	height:45px;
+	margin-left:250px;
+}
+.clothing-banner-nav nav ul li{
+	float:left;
+	line-height:45px;
+	text-align:center;
+	padding:0 20px;
+	height:100%;
+}
+.clothing-banner-nav nav ul li a{
+	color:#000000;
+}
+.clothing-banner-nav nav ul li a:hover{
+	color:#FF6633;
+}
+.clothing-banner-sidebar{
+	width:240px;
+	height:520px;
+	background-color:#ff6633;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:200;
+}
+.clothing-banner-sidebar h2{
+	font-size:16px;
+	color:#FFFFFF;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	padding-left:15px;
+}
+.clothing-banner-sidebar>ul{
+	width:100%;
+	position:relative;
+}
+.clothing-banner-sidebar>ul>li {
+	width:100%;
+	overflow:hidden;
+	font-size:14px;
+	padding:9px 0;
+	float:left;
+}
+.clothing-banner-sidebar>ul>li>a{
+	color:#FFFFFF;
+}
+.clothing-banner-sidebar>ul>li span.sp1{
+	padding-left:8px;
+}
+.clothing-banner-sidebar>ul>li span.sp2{
+	padding-left:8px;
+}
+.clothing-banner-sidebar>ul>li span.sp3{
+	padding-left:8px;
+}
+.clothing-banner-sidebar>ul>li b{
+	float:right;
+	font-size:18px;
+	font-weight:normal;
+	padding-right:5px;
+}
+.clothing-banner-sidebar>ul>li.first-li{
+	background-color:#ff9999;
+} 
+.clothing-banner-sidebar>ul>li.first-li a{
+	padding-left:8px;
+}
+.clothing-banner-sidebar>ul>li div.cloth{
+	width:360px;
+	height:473px;
+	background-color:#FFFFFF;
+	position: absolute;
+	top:2px;
+	left:240px;
+	z-index:150;
+	display:none;
+}
+.clothing-banner-sidebar>ul>li:hover{
+	background-color:#FFFFFF;
+}
+.clothing-banner-sidebar>ul>li:hover>a{
+    color:#000000;
+}
+.clothing-banner-sidebar>ul>li:hover div.cloth{
+	display:block;
+}
+.clothing-banner-sidebar div.cloth ol {
+	font-size:12px;
+	margin:30px 0 0 20px;
+}
+.clothing-banner-sidebar div.cloth ol li{
+	padding:10px 0;
+}
+.clothing-banner-sidebar div.cloth ol li a {
+	color:#000000;
+}
+.clothing-banner-sidebar div.cloth ol li a:hover {
+	color:#FF6400;
+}
+/*服装第二部分*/
+.clothing-two #spe {
+	height:430px;
+	border-top:2px solid #f4f4f4;
+}
+.clothing-two h2{
+	font-size:28px;
+}
+.clothing-two div.spe-1{
+	width:400px;
+	height:100%;
+	background-color:#fff;
+	border:1px dashed #f4f4f4;
+}
+.clothing-two div.spe-1 img{
+	margin-left:25px;
+}
+.clothing-two div.spe-2{
+	width:400px;
+	height:100%;
+}
+.clothing-two div.spe-2 img {
+	margin-left:150px;
+}
+.clothing-two div.spe-3{
+	width:200px;
+	height:100%;
+	background-color:#f4f4f4;
+}
+.clothing-two div.spe-4{
+	width:198px;
+	height:100%;
+}
+.clothing-two div.spe-4 img{
+	margin-left:60px;
+}
+.clothing-two div.spe-2-1,.clothing-two div.spe-2-2{
+	position:relative;
+	border-bottom:1px solid #f4f4f4;
+}
+.clothing-two div.spe-2-1 p.suq,.clothing-two div.spe-2-2 p.suq{
+	position:absolute;
+	right:20px;
+	top:0;
+}
+.clothing-two div.spe-4-1,.clothing-two div.spe-4-2{
+	border-bottom:1px solid #f4f4f4;
+}
+.clothing-two #spe h4,.clothing-two #spe h3{
+	margin:20px 0 10px 35px;
+}
+.clothing-two #spe p.purple {
+	margin-left:35px;
+}
+.clothing-two #hot{
+	width:100%;
+	height:420px;
+	background-color:#cc3333;
+}
+.clothing-two #hot h3{
+	font-size:20px;
+	margin-top:30px;
+	margin-left:30px;
+	font-weight:400;
+}
+.clothing-two p.suq{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:#ff6666;
+	color:#fff; 
+	padding-top:15px;
+	padding-left:15px;
+}
+.clothing-two p.suq span{
+	display:block;
+}
+.clothing-two p.purple{
+	color:#990033;
+	font-size:14px;
+}
+.clothing-two .spe-3 h4{
+	margin-top:30px;
+	font-size:18px;
+	font-weight:600;
+}
+.clothing-two .spe-3 p.purple{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.clothing-two p.orange{
+	color:#ff6666;
+	margin-left:35px;
+	margin-bottom:20px;
+}
+.clothing-two p.lt{
+	margin-left:35px;
+}
+.clothing-two #title1,.clothing-two #title2{
+	font-size:24px;
+	margin-top:30px;
+	margin-bottom: 10px;
+}
+.clothing-two #hot .w-hot{
+	background-color:#fff;
+	margin-top:30px;
+	height:350px;
+	width:33%;
+}
+.clothing-two #hot .w-hot a{
+	display:block;
+	width:90px;
+	height:20px;
+	line-height:20px;
+	padding-left:5px;
+	margin:10px 0 10px 30px;
+	background-color:#cc3333;
+	color:#fff;
+	border-radius:0 10px 10px 0;
+}
+.clothing-two #hot p.red{
+	color:red;
+}
+.clothing-two #hot .hot-1{
+	position:relative;
+}
+.clothing-two #hot .hot-1 img{
+	position: absolute;
+	bottom:0;
+	right:20px;
+	z-index:0;
+}
+.clothing-two #hot .hot-1 h3{
+	position:relative;
+	z-index:2;
+}
+.clothing-two #hot .hot-2{
+	border-left:1px solid #f4f4f4;
+	border-right:1px solid #f4f4f4;
+}
+.clothing-two #hot .hot-2-1{
+	border-bottom:1px solid #f4f4f4;
+	height:50%;
+}
+.clothing-two #hot .hot-2-2{
+	height:50%;
+}
+.clothing-two #hot .hot-2-1,.clothing-two #hot .hot-2-2{
+	position:relative;
+}
+.clothing-two #hot .hot-2-2 h3{
+	position:relative;
+	z-index:5;
+}
+.clothing-two #hot .hot-2 h5{
+	position:absolute;
+	right:40px;
+	top:20px;
+	z-index:1;
+}
+.clothing-two #hot p{
+	margin:10px 0 10px 30px;
+}
+.clothing-two #hot .hot-2-2 img{
+	width:190px;
+	margin-top:50px;
+}
+.clothing-two #hot .hot-3-1,.clothing-two #hot .hot-3-2{
+	height:50%;
+}
+.clothing-two #hot .hot-3-1{
+	border-bottom:1px solid #f4f4f4;
+}
+.clothing-two #hot .hot-3-1 h5,.clothing-two #hot .hot-3-2 h5{
+	width:50%;
+}
+.clothing-two #hot .hot-3-1 h5 img,.clothing-two #hot .hot-3-2 h5 img{
+	padding:50px 0 0 30px;
+}
+.clothing-two #hot .hot-3-1 p,.clothing-two #hot .hot-3-2 p,
+.clothing-two #hot .hot-3-2 a,.clothing-two #hot .hot-3-1 a{
+	margin-left:80px;
+}
+/*服装第三部分*/
+.clothing-select{
+	height:530px;
+	background-color:#fff;
+}
+.clothing-select a{
+	color:#010101;
+}
+.clothing-select div.name a{
+	color:white;
+	display:block;
+}
+.clothing-select p{
+	margin:20px 0;
+}
+.clothing-select h2,.clothing-select h4{
+	margin-top: 15px;
+}
+.clothing-select  .title{
+	height: 80px;
+	position: relative;
+}
+.clothing-select .title div.name{
+	height:55px;
+	width:164px;
+	background-color: #a429cc;
+	color: #fff;
+	text-align:center;
+	line-height:55px;
+	font-size:26px;
+	position:absolute;
+	top:25px;
+	left:0;
+}
+.clothing-select .picture{
+	width: 1200px;
+	border-top: 3px solid #ececec;
+}
+.clothing-select .part1{
+	width: 403px;
+	height: 424px;
+	float: left;
+	position: relative;
+}
+.clothing-select .part2{
+	width: 403px;
+	height: 424px;
+	float: left;
+	border-left: 3px solid #fff;
+}
+.clothing-select .part3{
+	width: 390px;
+	height: 424px;
+	float: right;
+}
+.clothing-select .p1{
+	width: 403px;
+	height: 424px;
+}
+.clothing-select .p2{
+	width: 403px;
+	height: 210px;
+    position: relative;
+}
+.clothing-select .p3{
+	width: 390px;
+	height: 105px;
+	border-bottom: 1px solid #cfcfcf;
+}
+.clothing-select .part2 div.bor{
+	border-bottom: 3px solid #fff;
+}
+.clothing-select .part3 div.nobor{
+	border: none;
+}
+.clothing-select .intro{
+	width: 280px;
+	height: 105px;
+	float: left;
+}
+.clothing-select .contemt2 p{
+	font-size:24px;
+	color:#000;
+	text-align:center;
+}
+.clothing-select .intro h4{
+	font-size:18px;
+	margin-top:5px;
+	font-weight:400;
+}
+.clothing-select .intro p,.clothing-select .content1 p{
+	font-size:12px;
+	color:#737373;
+	line-height:18px;
+}
+.clothing-select .intro p,.clothing-select .intro h4{
+	margin-left:20px;
+}
+.clothing-select .intro p{
+	margin-top:10px;
+}
+.clothing-select .content1{
+	width:244px;
+	height:117px;
+	background-color:#FFFFFF;
+	position:absolute;
+	top:270px;
+	left:0;
+	padding-left:28px;
+}
+.clothing-select .content2{
+	width:190px;
+	height:90px;
+	background-color:#FFFFFF;
+	position:absolute;
+	top:87px;
+	left:0;
+	padding-left:28px;
+}
+.clothing-select .content2 p{
+	font-size:20px;
+}
+.clothing-select .content1 h2{
+	font-size:24px;
+	font-weight:400;
+}
+/*服装第四部分*/
+.clothing-watch{
+	width: 1200px;
+	margin: 0 auto;
+}
+.clothing-watch > .watch-content{
+	width: 100%;
+}
+.clothing-watch > .watch-content li{
+	float: left;
+}
+.watch-content-title{
+	height: 56px;
+	padding-top: 25px;
+}
+.clothing-watch .watch-content-title > a{
+	font-size: 26px;
+	color: #fff;
+}
+.clothing-watch .watch-content-title > a > h3{
+	width: 163px;
+	height: 58px;
+	line-height: 58px;
+	background-color: #15359b;
+	text-align: center;
+}
+.clothing-watch .watch-content-list{
+	width: 100%;
+	height: 391px;
+	border:1px solid #d3d3d3;
+	border-top-width: 3px;
+	border-left-width:0;
+	border-right-width: 0;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dt{
+	width: 402px;
+	height: 281px;
+	background-color: #15359b;
+	position: relative;	
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dt h6{
+	font-size: 20px;
+	color: #fff;
+	padding:25px 0 0 16px;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dt img{
+	position: absolute;
+	right: 17px;
+	bottom: 0;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dd{
+	padding-left: 20px;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dd h5{
+	font-size: 16px;
+	color: #000;
+	line-height: 54px;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dd ul li{
+	margin-right: 40px;
+	text-align: center;
+	line-height: 18px;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dd ul li a{
+	font-size: 14px;
+	color: #545454;
+}
+.clothing-watch .watch-content-list > .watch-content-list-sun>dl dd ul li a:hover{
+	text-decoration: underline;
+	color:#F85016;
+}
+.clothing-watch .watch-content-list-tap{
+	width: 797px;
+	margin-left: 402px;
+}
+.clothing-watch .watch-content-list-tap>li{
+	width: 24.86%;
+	text-align: center;
+	height: 391px;
+	border-right: 1px solid #d3d3d3;
+}
+.clothing-watch .watch-content-list-tap>li p:nth-child(1){
+	font-size: 20px;
+	color: #000;
+	margin-top: 30px;
+	text-align: left;
+	margin-left: 18px;
+}
+.clothing-watch .watch-content-list-tap>li p:nth-child(2){
+	font-size: 16px;
+	color: #fa0c17;
+	text-align: left;
+	margin-left: 18px;
+}
+.clothing-watch .watch-content-list-tap>li img{
+	margin-top: 30px;
+}
+.clothing-watch .watch-content-list-tap>li img:hover{
+	-webkit-transform: translate(-2px,-2px);
+	-ms-transform: translate(-2px,-2px);
+	-o-transform: translate(-2px,-2px);
+	transform: translate(-2px,-2px);	
+}
+.clothing-watch .watch-content-brand>ul{
+	width: 100%;
+}
+.clothing-watch .watch-content-brand>ul>li{
+	height: 87px;
+	line-height: 87px;
+	text-align: center;
+	width: 14.28%;
+}
+.clothing-watch .watch-content-brand>ul>li img{
+	vertical-align: middle;	
+}
+
