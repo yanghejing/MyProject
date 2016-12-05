@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/to_top.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.boxhovermodal.js" ></script>
+	<script type="text/javascript" src="js/bdyz.js"></script>
+	<script type="text/javascript" src="js/resize.js"></script>
+	<script src="js/swiper.animate.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script>
+
+		$(function(){
+			//调用插件boxhovermodal,一个操作元素,一个参数
+			//参数可以为空,默认为.box-hover-modal-m
+			$(".box-hover-modal").boxhovermodal(".box-hover-modal-m");
+		});
+	</script>
+</head>
+<body>	
+<!-- 头部 -->
+	<div id="tb_box">
+		<div class="tb_wz">
+			<h1 class="tb_wz_h1">We Plan Your Trip</h1>
+			<h1 class="tb_wz_h1">Best Available Choice in Town</h1>
+
+			<div id="tb_xl">
+				<div class="xl_1">
+					<select name="name" class="xiala" id="">
+						<option value="1">Location</option>
+						<option value="2">Czech Republic</option>
+						<option value="3">France</option>
+						<option value="4">germany</option>
+						<option value="5">Italy</option>
+					</select>
+				</div>
+				<div class="xl_1">
+					<select name="name" class="xiala" id="">
+						<option value="1">Hotel</option>
+						<option value="2">Hilton</option>
+						<option value="3">Orange county</option>
+						<option value="4">Sheraton</option>
+					</select>
+				</div>
+				<div class="xl_1">
+					<select name="name" class="xiala" id="">
+						<option value="1">Type</option>
+						<option value="2">Group</option>
+						<option value="3">Trip</option>
+					</select>
+				</div>
+				<div class="xl_1">
+					<select name="name" class="xiala" id="">
+						<option value="1">Select price</option>
+						<option value="2">$100 </option>
+						<option value="3">$500</option>
+						<option value="4">$700</option>
+						<option value="5">$4500</option>
+					</select>
+				</div>
+				<div class="xl_an">
+					<input type="submit" value="Check Availability" style="width:330px; height:35px; color: #fff; font-size: 14px; text-align: center; line-height: 35px;background-color: #062f3c; border: none; 
+					 cursor: pointer; ">
+				</div>
+			
+			</div>
+		</div>
+		<div id="tb_nav">
+			<div id="tb_nav_box">
+				<div class="tb_nav_box_left">
+					<a href="#">Trip Guide</a>
+				</div>
+				<div class="tb_nav_box_right">
+					<ul id="tb_nav_box_right_ul">
+						<li>
+							<a id="nav_ho" href="#">Home</a>
+						</li>
+						<li>
+							<a id="nav_ab" href="#">About</a>
+						</li>
+						<li>
+							<a id="nav_ser" href="#">Services</a>
+						</li>
+						<li>
+							<a id="nav_tour" href="#">Tours</a>
+						</li>
+						<li>
+							<a id="nav_new" href="#">News</a>
+						</li>
+						<li>
+							<a id="nav_gu" href="#">Guides</a>
+						</li>
+						<li>
+							<a id="nav_con" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+<!--TTG -->
+	<div class="TTG">
+		<div class="ttg_wz">
+			<h1>Top Trip Guide</h1>
+			<p>Best Travel Packages Available</p>
+		</div>
+		<div class="ttg_tu">
+			<div class="ttg_tu_1">
+				<div class="ttg_tu1">
+					<div class="ttg_tu11">
+					<div class="ttg_img">
+						<img src="img/ttg_p1.jpg" alt="tu1">
+					</div>
+					<div class="ttg_k1">
+							<p>Cuba</p>
+						</div>
+					</div>
+					<div class="ttg_k2">
+						<p>America</p>
+					</div>
+					<div class="ttg_k3">
+						<p>Luxury</p>
+					</div>
+					<div class="ttg_kwz">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit</p>
+					</div>
+				</div>
+				<div class="ttg_tu1" style="margin-left:45px;">
+					<div class="ttg_tu11">
+					<div class="ttg_img">
+						<img src="img/ttg_p2.jpg" alt="tu1">
+					</div>
+					<div class="ttg_k1">
+							<p>Berlin</p>
+						</div>
+					</div>
+					<div class="ttg_k2">
+						<p>Europe</p>
+					</div>
+					<div class="ttg_k3">
+						<p>Relax</p>
+					</div>
+					<div class="ttg_kwz">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit</p>
+					</div>
+				</div>
+				<div class="ttg_tu1" style="margin-left:45px;">
+					<div class="ttg_tu11">
+					<div class="ttg_img">
+						<img src="img/ttg_p3.jpg" alt="tu1">
+					</div>
+					<div class="ttg_k1">
+							<p>Dubai</p>
+						</div>
+					</div>
+					<div class="ttg_k2">
+						<p>Asia</p>
+					</div>
+					<div class="ttg_k3">
+						<p>Luxury</p>
+					</div>
+					<div class="ttg_kwz">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="ttg_tu_1" style="margin-top:50px;">
+				<div class="ttg_tu1">
+					<div class="ttg_tu11">
+					<div class="ttg_img">
+						<img src="img/ttg_p4.jpg" alt="tu1">
+					</div>
+					<div class="ttg_k1">
+							<p>Rome</p>
+						</div>
+					</div>
+					<div class="ttg_k2">
+						<p>Europe</p>
+					</div>
+					<div class="ttg_k3">
+						<p>Luxury</p>
+					</div>
+					<div class="ttg_kwz">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit</p>
+					</div>
+				</div>
+				<div class="ttg_tu1" style="margin-left:45px;">
+					<div class="ttg_tu11">
+					<div class="ttg_img">
+						<img src="img/ttg_p5.jpg" alt="tu1">
+					</div>
+					<div class="ttg_k1">
+							<p>india</p>
+						</div>
+					</div>
+					<div class="ttg_k2">
+						<p>Asia</p>
+					</div>
+					<div class="ttg_k3">
+						<p>Relax</p>
+					</div>
+					<div class="ttg_kwz">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit</p>
+					</div>
+				</div>
+				<div class="ttg_tu1" style="margin-left:45px;">
+					<div class="ttg_tu11">
+					<div class="ttg_img">
+						<img src="img/ttg_p6.jpg" alt="tu1">
+					</div>
+					<div class="ttg_k1">
+							<p>London</p>
+						</div>
+					</div>
+					<div class="ttg_k2">
+						<p>Europe</p>
+					</div>
+					<div class="ttg_k3">
+						<p>Relax</p>
+					</div>
+					<div class="ttg_kwz">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- about 	and	our-->
+	<div id="abt">
+		<div id="abt_cont">
+			<h2>About us</h2>
+			<img id="rw" src="img/ren.png" alt="">
+			<div id="cont_t">				
+				<div id="let">
+					<div id="let_t"></div>
+				</div>
+				<div id="rig">
+					<h3>Hotel Online Booking Service</h3>
+					<p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Abaut dignissimos eaest, impedit incidunt, laboriosam maxime molestias numquam odio officiis. Abaut dignissimos eaest, impedit incidunt.</p>
+				</div>
+				<div id="let1">
+					<div id="let1_t"></div>
+				</div>
+				<div id="rig">
+					<h3>Book Cheap Flights Online</h3>
+					<p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Abaut dignissimos eaest, impedit incidunt, laboriosam maxime molestias numquam odio officiis. Abaut dignissimos eaest, impedit incidunt.</p>
+				</div>
+				<div id="let2">
+					<div id="let2_t"></div>
+				</div>
+				<div id="rig">
+					<h3>Taxi Cab Booking Hotline</h3>
+					<p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Abaut dignissimos eaest, impedit incidunt, laboriosam maxime molestias numquam odio officiis. Abaut dignissimos eaest, impedit incidunt.</p>
+				</div>
+				<div id="let3">
+					<div id="let3_t"></div>
+				</div>
+				<div id="rig" style="margin-bottom:0px;">
+					<h3>Tour Guide & Private Guided Tours</h3>
+					<p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Abaut dignissimos eaest, impedit incidunt, laboriosam maxime molestias numquam odio officiis. Abaut dignissimos eaest, impedit incidunt.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sevs">
+		<div id="sevs_ct">
+			<h2>Our Services</h2>
+			<div id="se_box">
+				<div id="tet" style="margin-left: 40px;">
+					<img src="img/ct3.png" alt="">
+					<h3>vel illum qui dolorem</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<button id="view">
+						<ul id="mbox">
+							<li id="cm1">Learn More</li>
+							<li style="color:#062f3c;" id="cm2">Learn More</li>
+							<li id="cm2">Learn More</li>
+						</ul>
+					</button>
+				</div>
+				<div id="tet">
+					<img src="img/ct3.png" alt="">
+					<h3>vel illum qui dolorem</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<button id="view">
+						<ul id="mbox">
+							<li id="cm1">Learn More</li>
+							<li style="color:#062f3c;" id="cm2">Learn More</li>
+							<li id="cm2">Learn More</li>
+						</ul>
+					</button>
+				</div>
+				<div id="tet">
+					<img src="img/ct3.png" alt="">
+					<h3>vel illum qui dolorem</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<button id="view">
+						<ul id="mbox">
+							<li id="cm1">Learn More</li>
+							<li style="color:#062f3c;" id="cm2">Learn More</li>
+							<li id="cm2">Learn More</li>
+						</ul>
+					</button>
+				</div>
+				<div id="tet">
+					<img src="img/ct3.png" alt="">
+					<h3>vel illum qui dolorem</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<button id="view">
+						<ul id="mbox">
+							<li id="cm1">Learn More</li>
+							<li style="color:#062f3c;" id="cm2">Learn More</li>
+							<li id="cm2">Learn More</li>
+						</ul>
+					</button> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cont">
+		<div id="smn">
+			<button id="but2">X</button>
+			<img src="img/bgt.jpg " alt="">
+			<h2>Trip Guide</h2>
+			<p>Nam aliquam pretium feugiat. Duis semest, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin euscelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+		</div>
+	</div>
+
+<!-- Tours -->
+	<div class="tours_dk" style="margin-top:70px;">
+		<div class="tours">
+			<h1 style="margin-bottom:70px;font-size:33px;">Tours</h1>
+			<div class="jingdian">
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a1.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a2.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a3.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a4.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a5.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a6.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a7.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a1.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+				<a href="" class="box-hover-modal">
+					<div class="box-hover-modal-con">
+						<img src="img/a2.jpg" alt="">
+					</div>
+					<div class="box-hover-modal-m">
+						<h5>Trip Guide</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="Tour_Guides_dk">
+		<div class="Tour_Guides">
+			<h1 style="margin-bottom:70px;font-size:33px;">Tour Guides</h1>
+			<div class="character">
+				<div class="character_fl">
+					<div class="character_tou">
+						<img src="img/t1.jpg" alt="">
+						<div class="chaaracter_zzc">
+							<a href="" class="lx1"></a>
+							<a href="" class="lx2"></a>
+							<a href="" class="lx3"></a>
+						</div>
+					</div>
+					<div class="character_txt">
+						<p class="character_p1">Filmr Doe</p>
+						<p class="character_p2">Neque porro quisquam est, qui </p>
+						<p class="character_p2">dolorem ipsum quia dolor sit amet,</p>
+						<p class="character_p2">consectetur, adipisci velit, sed quia </p>
+						<p class="character_p2">non numquam.</p>
+					</div>
+				</div>
+				<div class="character_fl">
+					<div class="character_tou">
+						<img src="img/t2.jpg" alt="">
+						<div class="chaaracter_zzc">
+							<a href="" class="lx1"></a>
+							<a href="" class="lx2"></a>
+							<a href="" class="lx3"></a>
+						</div>
+					</div>
+					<div class="character_txt">
+						<p class="character_p1">Filmr Doe</p>
+						<p class="character_p2">Neque porro quisquam est, qui </p>
+						<p class="character_p2">dolorem ipsum quia dolor sit amet,</p>
+						<p class="character_p2">consectetur, adipisci velit, sed quia </p>
+						<p class="character_p2">non numquam.</p>
+					</div>
+				</div>
+				<div class="character_fl">
+					<div class="character_tou">
+						<img src="img/t3.jpg" alt="">
+						<div class="chaaracter_zzc">
+							<a href="" class="lx1"></a>
+							<a href="" class="lx2"></a>
+							<a href="" class="lx3"></a>
+						</div>
+					</div>
+					<div class="character_txt">
+						<p class="character_p1">Filmr Doe</p>
+						<p class="character_p2">Neque porro quisquam est, qui </p>
+						<p class="character_p2">dolorem ipsum quia dolor sit amet,</p>
+						<p class="character_p2">consectetur, adipisci velit, sed quia </p>
+						<p class="character_p2">non numquam.</p>
+					</div>
+				</div>
+				<div class="character_fl">
+					<div class="character_tou">
+						<img src="img/t4.jpg" alt="">
+						<div class="chaaracter_zzc">
+							<a href="" class="lx1"></a>
+							<a href="" class="lx2"></a>
+							<a href="" class="lx3"></a>
+						</div>
+					</div>
+					<div class="character_txt">
+						<p class="character_p1">Filmr Doe</p>
+						<p class="character_p2">Neque porro quisquam est, qui </p>
+						<p class="character_p2">dolorem ipsum quia dolor sit amet,</p>
+						<p class="character_p2">consectetur, adipisci velit, sed quia </p>
+						<p class="character_p2">non numquam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- NEWS -->
+	<div class="news" id="newnew">
+		<div class="news_top">
+			<p class="news_top_txt">News</p>
+		</div>
+		<div class="news_pic">
+			<div class="news_pic_1">
+	        	<a class="pic_wk" href="#">
+	        		<img class="news_img" src="img/pic_1.jpg" alt="">
+	        	</a>
+				<div class="news_pic_txt">
+					<p class="news_pic_txt_1">Lorem ipsum</p>
+					<p class="news_pic_txt_2">05 December</p>
+					<div class="news_pic_wz">
+						<p class="news_pic_wz1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit.</p>
+						<div class="news_bottom">
+							<a id="dl" class="news_bottom_1" href="#newnew">Learn More</a>
+						<div id="dk" class="news_dk">
+							<div class="news_body_1">
+								<button id="gb" style="font-size:14px;">X</button>
+								<img src="img/pic_4.jpg" alt="">
+								<p class="news_body_txt1">Trip Guide</p>
+								<p class="news_body_txt2">Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="news_pic_1">
+	        	<a class="pic_wk" href="#">
+	        		<img class="news_img" src="img/pic_2.jpg" alt="">
+	        	</a>
+				<div class="news_pic_txt">
+					<p class="news_pic_txt_1">Lorem ipsum</p>
+					<p class="news_pic_txt_2">05 December</p>
+					<div class="news_pic_wz">
+						<p class="news_pic_wz1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit.</p>
+						<div class="news_bottom">
+							<a id="dl" class="news_bottom_1" href="#newnew">Learn More</a>
+						<div id="dk" class="news_dk">
+							<div class="news_body_1">
+								<button id="gb">X</button>
+								<img src="img/pic_4.jpg" alt="">
+								<p class="news_body_txt1">Trip Guide</p>
+								<p class="news_body_txt2">Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+								
+							</div>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="news_pic_1">
+	        	<a class="pic_wk" href="#">
+	        		<img class="news_img" src="img/pic_3.jpg" alt="">
+	        	</a>
+				<div class="news_pic_txt">
+					<p class="news_pic_txt_1">Lorem ipsum</p>
+					<p class="news_pic_txt_2">05 December</p>
+					<div class="news_pic_wz">
+						<p class="news_pic_wz1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit.</p>
+						<div class="news_bottom">
+							<a id="dl" class="news_bottom_1" href="#newnew">Learn More</a>
+						<div id="dk" class="news_dk">
+							<div class="news_body_1">
+								<button id="gb">X</button>
+								<img src="img/pic_4.jpg" alt="">
+								<p class="news_body_txt1">Trip Guide</p>
+								<p class="news_body_txt2">Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+								
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 联系我们 -->
+	<div class="contact">
+		<div class="contact-whole">
+			<h3>Contact</h3>
+			<div class="contact-whole-form clearfix">
+				<div class="contact-whole-form-left">
+					<form class="contact-whole-form-left-top clearfix">
+						<input type="text" placeholder="Name" id="usename" style="font-size:14px;">
+						<button><img src="img/contact1.png" alt=""></button>
+					</form>
+					<form class="contact-whole-form-left-top clearfix">
+						<input type="email" placeholder="E-mail" id="emall" style="font-size:14px;" >
+						<button type="submit"><img src="img/contact2.png" alt=""></button>
+					</form>
+					<form class="contact-whole-form-left-top clearfix">
+						<input type="url" placeholder="Website" id="wz" style="font-size:14px;">
+						<button type="submit"><img src="img/contact1.png" alt=""></button>
+					</form>
+				</div>
+				<form class="contact-whole-form-right">
+					<textarea type="number" placeholder="Message" id="" cols="30" rows="10"></textarea>
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="base">
+		<div class="base-whole">
+			<p>Copyright © 2016.Company name All rights reserved.</p>
+			<a href="#">网页模板</a>
+		</div>
+	</div>
+	
+<!-- 返回顶部 -->
+	<a id="to_top"></a>
+</body>
+<script>
+	var view=document.getElementById('view');
+	var cont=document.getElementById('cont');
+	var but2=document.getElementById('but2');
+	var Height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+	cont.style.height=Height+"px";
+
+	$("body #view").click(function(){
+		$("#cont").fadeIn(500);
+	});
+	$("#but2").click(function(){
+		$("#cont").slideUp(400);
+	})
+
+	var dk=document.getElementById('dk');
+	var dl=document.getElementById('dl');
+	var gb=document.getElementById('gb');
+	var Height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+	dk.style.height=Height+"px";
+
+	$("body #dl").click(function(){
+		$("#dk").fadeIn(500);
+	})
+	$("#gb").click(function(){
+		$("#dk").slideUp(400);
+	});
+
+</script> 
+</html>
